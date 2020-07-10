@@ -1,9 +1,11 @@
 @import url("./components/dropdowns.css");
 @import url("./components/color__keys.css");
 @import url("./components/d3__charts.css");
+@import url("./components/section__headers.css");
 
 .main__grid {
-  background-color: blanchedalmond;
+  background-color: #fcfff6;
+  padding-top: 12%;
 }
 
 #view__passes__aerial {
@@ -14,4 +16,8 @@
 #view__passes__direction {
   border: solid;
   border-color: blue;
+}
+
+p {
+  padding: 20px 30px 0 30px;
 }

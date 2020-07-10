@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- SEO Information -->
-    <title>GARROWLAND STATISTICS</title>
+    <title>LEAGUE STATISTICS</title>
     <meta name="description" content="" />
 
     <!-- Meta tags -->
@@ -26,16 +26,60 @@
     <!-- Site content -->
 
     <header>
-      <div>
-        <a href="/">GARROWLAND UNITED</a>
-        <span class="header__league-stats" id="header__league-stats"
-          >League Statistics</span
+      <nav id="navbar"
+        class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
+        role="navigation"
+      >
+        <a class="navbar-brand" href="#">League Statistics</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navitemsCollapse"
+          aria-controls="navitemsCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-      </div>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navitemsCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home__section">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#passes__section">Passes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#shots__section">Shots</a>
+            </li>
+          </ul>
+        </div>
+
     </header>
 
     <main class="main__grid">
+      <section id="home__section" class="section__header">
+          <h2>
+              Project Description
+            </h2>
+            <p class="mx-4">This project uses D3 version 4 to render fictional league statistics in the form of stacked barcharts.
+              The chart views are highly customizable and build with the ease of re-usability in mind.
+            <br>
+            The application is also responsive and easy to use on all device, thanks to the grid system.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quam saepe ea, beatae maxime blanditiis ullam necessitatibus eligendi repellendus quae unde repellat repudiandae doloremque fugit vitae! Inventore sit sed facilis!
+            </p>
+      </section>
+
+
+      <section id="passes__section" class="section__header">
+          <h2>
+              Passing Stats
+            </h2>
+      </section>
+
       <section id="d3__views" class="container-fluid">
+
         <div class="row">
           <div id="view__passes__aerial" class="col-sm-6">
             <div id="dropdown__teams__aerial" class="row dropdown__teams"></div>
@@ -81,6 +125,53 @@
           </div>
         </div>
       </section>
+
+      <section id="shots__section" class="section__header">
+          <h2>
+              Shots
+            </h2>
+          </h2>
+          <p class="mx-4">This project uses D3 version 4 to render fictional league statistics in the form of stacked barcharts.
+            The chart views are highly customizable and build with the ease of re-usability in mind.
+          <br>
+          The application is also responsive and easy to use on all device, thanks to the grid system.
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, accusamus aliquam delectus quis nisi, cupiditate quam illum ipsa. Rem, cum!
+
+
+          <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam adipisci nihil eaque dignissimos quo corrupti totam iusto beatae reiciendis, enim asperiores sit, animi obcaecati quis nobis error ex ducimus perspiciatis?
+
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+        </p>
+      </section>
+
+
     </main>
 
     <!-- Below-the-fold scripts -->
@@ -115,10 +206,11 @@
 
     <!-- Bootsrap scripts: jQuery, Popper, Bootrap JS -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+      </script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
       integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -129,5 +221,37 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script>
+        $('body').scrollspy({target: '#navbar', offset: 65});
+
+          // Add smooth scrolling
+        $('.nav-link').on('click', function (e) {
+          // Check for a hash value
+          if (this.hash !== '') {
+            // Prevent default behavior
+            e.preventDefault();
+
+            // Store hash
+            const hash = this.hash;
+
+            // Animate smooth scroll
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top - 55
+            }, 950, function () {
+              // Add hash to URL after scroll
+              window.location.hash = hash - 55;
+
+              // Add hash (#) to URL when done scrolling (default click behavior), without jumping to hash
+              // if (history.pushState) {
+              //    history.pushState(null, null, hash);
+              // } else {
+              //     window.location.hash = hash;
+              // }
+            });
+            // return false;
+          }
+        });
+    </script>
+
   </body>
 </html>

@@ -1,0 +1,9 @@
+.section__header > h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: black;
+  padding-left: 1%;
+  padding-bottom: 1%;
+  background-image: linear-gradient(to bottom right, #e5ffb7, #fcfff6);
+  margin-bottom: 0;
+}
