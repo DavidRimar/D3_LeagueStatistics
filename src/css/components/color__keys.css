@@ -32,7 +32,7 @@
 
 /* ///// MEDIA QUERIES ////// */
 
-/*Extra small devices (portrait phones, less than 576px)*/
+/*Extra small devices (portrait phones, less than 376px)*/
 @media (max-width: 375.98px) {
   .bc__colorkeys {
     justify-content: left;
@@ -47,7 +47,7 @@
   }
 }
 
-/* Small devices (landscape phones, 576px and up)*/
+/* Small devices (between 376px and 576px)*/
 @media (min-width: 376px) and (max-width: 575.98px) {
   .bc__color {
     width: 15px;
@@ -59,7 +59,7 @@
   }
 }
 
-/* Medium devices (tablets, 768px and up)*/
+/* Medium devices (tablets, 576px and 992px)*/
 @media (min-width: 576px) and (max-width: 991.98px) {
   .bc__colorkeys {
     justify-content: left;

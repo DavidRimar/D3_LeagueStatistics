@@ -17,7 +17,7 @@
 
 /* ///// MEDIA QUERIES ////// */
 
-/*Extra small devices (portrait phones, less than 576px)*/
+/*Extra small devices (portrait phones, less than 376px)*/
 @media (max-width: 375.98px) {
   .dropdown__teams {
     font-size: 12px;
@@ -25,7 +25,7 @@
   }
 }
 
-/* Small devices (landscape phones, 576px and up)*/
+/* Small devices (between 376px and 576px)*/
 @media (min-width: 376px) and (max-width: 575.98px) {
   .dropdown__teams {
     font-size: 14px;
@@ -33,14 +33,14 @@
   }
 }
 
-/* Medium devices (tablets, 768px and up)*/
+/* Medium devices (tablets, 576px and 992px)*/
 @media (min-width: 576px) and (max-width: 991.98px) {
   .dropdown__teams {
     font-size: clamp(
       11px,
       1.6vw,
       14px
-    ); /* the width will be at least the 2nd value, but will be wider if the the viewport is more than (1st vw = 2nd px) wide */
+    )
     max-width: 340px;
   }
 }

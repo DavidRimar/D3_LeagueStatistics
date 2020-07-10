@@ -87,7 +87,7 @@ const renderStackedBarchart = (
     .padding(0.38);
 
   // X, Y DOMAIN (the data that is mapped to the range)
-  yScale.domain([0, maxValue]); // NEED A MAX HERE
+  yScale.domain([0, maxValue]);
 
   xScale.domain(
     dataSet.map(d => {
@@ -110,8 +110,6 @@ const renderStackedBarchart = (
       .attr("preserveAspectRatio", "xMinYMin meet")
       .attr("viewBox", `0 0 ${svgWidth} ${svgHeight}`)
       .classed("svg-content", true);
-    //.attr("width", width + margin.left + margin.right)
-    //.attr("height", height + margin.top + margin.bottom);
 
     svgContainer
       .append("g")
@@ -179,7 +177,7 @@ const renderStackedBarchart = (
     .append("rect")
     .attr("class", "rect")
     .attr("x", d => {
-      return xScale(d.data.GAMEWEEK_ID); //what is d.data.fullname ==> well, data is an object containing our data
+      return xScale(d.data.GAMEWEEK_ID);
     })
     .attr("y", d => {
       return yScale(d[1]); // starting position of the rectangle
@@ -200,11 +198,10 @@ const renderStackedBarchart = (
 
   // UPDATE PHASE
   rects
-    //.selectAll(".rect") // thats why the "change" works:
     .transition()
     .duration(transitionDuraton)
     .attr("x", d => {
-      return xScale(d.data.GAMEWEEK_ID); //what is d.data.fullname ==> well, data is an object containing our data
+      return xScale(d.data.GAMEWEEK_ID); // d.data is an object containing the original data
     })
     .attr("y", d => {
       return yScale(d[1]); // starting position of the rectangle
@@ -213,10 +210,6 @@ const renderStackedBarchart = (
     .attr("height", d => {
       return yScale(d[0]) - yScale(d[1]); // length of the rectangle
     });
-  //.style("fill", "pink")
-
-  // EXIT PHASE: NO HAPPENING: NO RELEVANT BC SAME DATA FOR EACH UPDATE
-  // layers.exit().remove();
 
   // UPDATE TICKS
   updateTicks(yAxis, `y__${containerDomId}`, transitionDuraton);

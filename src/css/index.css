@@ -15,20 +15,3 @@
   border: solid;
   border-color: blue;
 }
-
-/* TOOTLTIP _ 1st METHID */
-/*
-g.tooltip {
-  position: absolute;
-  text-align: center;
-  vertical-align: center;
-  width: 19px;
-  height: 19px;
-  padding: 0;
-  font: 10px sans-serif;
-  font-weight: bold;
-  background: lightsteelblue;
-  border: 0px;
-  border-radius: 2px;
-  pointer-events: none;
-}*/

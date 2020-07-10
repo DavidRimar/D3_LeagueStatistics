@@ -10,7 +10,9 @@ export const TEAMS = {
   T9: "West Woodwasp",
   T10: "Bergerund United",
   T11: "South Preston Saints",
-  T12: "Vagabundos AFC"
+  T12: "Vagabundos AFC",
+  T13: "Hollytown FC",
+  T14: "Thornton AFC"
 };
 
 export const AERIAL_PASSES_LABELS = ["defensive", "middle", "offensive"];

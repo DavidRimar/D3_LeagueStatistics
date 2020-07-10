@@ -11,9 +11,6 @@ const addTooltip = (svgContainer, containerDomId) => {
     .attr("class", `tooltip__group__${containerDomId}`)
     .style("display", "none");
 
-  // .attr("class", "tooltip__group")
-  // .style("display", "none");
-
   // ADD <rect> TO <g>
   tooltip
     .append("rect")

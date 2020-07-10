@@ -85,12 +85,7 @@
 
     <!-- Below-the-fold scripts -->
     <script type="module">
-      // import renderStackedBarchart from "./src/js/views/stackedBarchart/renderStackedBarchart.js"; // not used
-      // import filterByTeam from "./src/js/model/filterByTeam.js";
       import createDataModel from "./src/js/model/createDataModel.js";
-      // import { TEAMS } from "./src/js/model/constants.js";
-      // import renderTeamDropdown from "./src/js/views/dropdown/renderTeamDropdown.js";
-      // import { handleTeamChange } from "./src/js/presenter/presentStackedBarchart1.js";
       import { initViews } from "./src/js/presenter/presentMain.js";
 
       ////////////////// INITIALISE APP START //////////////////
@@ -106,20 +101,16 @@
         // INSTANTIATE VIEWS
         initViews(leagueStatistics);
       };
-
       ////////////////// INIT APP END //////////////////
 
-      // an object of all datasheets
       const data = {
         gameweeks: "./data/gameweekStats.csv"
       };
 
-      // Queue and import the data
+      // QUEUE AND IMPORT DATA
       d3.queue()
         .defer(d3.csv, data.gameweeks)
         .await(initialiseApp);
-
-      /////////// INITIALISE APP METHOD END ///////////////////////////
     </script>
 
     <!-- Bootsrap scripts: jQuery, Popper, Bootrap JS -->

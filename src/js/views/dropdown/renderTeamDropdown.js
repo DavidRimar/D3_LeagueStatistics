@@ -1,13 +1,11 @@
 /**
  *
- * @typedef Props
- * @property {string} containerDOMElementID
- * @property {[string|number, string][]} dropdownValues Data populating the dropdown
+ * //@typedef Props
+ * //@property {string} containerDOMElementID
+ * //@property {[string|number, string][]} dropdownValues Data populating the dropdown
  *                                            as an object of key-value pairs
- * @property {string} labelText Text that goes above the dropdown
- * @property {ChartHandlers} [handlers]
- *
- * @param {Props} param0
+ * //@property {string} labelText Text that besides the dropdown
+ * //@property {ChartHandlers} [handlers]
  */
 const renderTeamDropdown = ({
   containerDOMElementID,
@@ -38,17 +36,6 @@ const renderTeamDropdown = ({
 
   // SELECT THE <select> part of the container
   const dropdownSelect = container.select("select");
-
-  // Removes all options and adds a default empty first option to the dropdown
-  /*
-  dropdownSelect.selectAll("option").remove();
-  dropdownSelect
-    .append("option")
-    .attr("disabled", true)
-    .attr("selected", true)
-    .attr("value", true)
-    .text("Select a team");
-  */
 
   // Populate the dropdown with options from the data where its value is the key
   const dropdownOptions = dropdownSelect
