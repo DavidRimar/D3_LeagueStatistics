@@ -1,0 +1,34 @@
+@import url("./components/dropdowns.css");
+@import url("./components/color__keys.css");
+@import url("./components/d3__charts.css");
+
+.main__grid {
+  background-color: blanchedalmond;
+}
+
+#view__passes__aerial {
+  border: solid;
+  border-color: black;
+}
+
+#view__passes__direction {
+  border: solid;
+  border-color: blue;
+}
+
+/* TOOTLTIP _ 1st METHID */
+/*
+g.tooltip {
+  position: absolute;
+  text-align: center;
+  vertical-align: center;
+  width: 19px;
+  height: 19px;
+  padding: 0;
+  font: 10px sans-serif;
+  font-weight: bold;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 2px;
+  pointer-events: none;
+}*/

@@ -1,0 +1,47 @@
+import {
+  parseClubStatistics,
+} from "./parsers/index.js"
+
+/**
+ * // WE NEED 2 RAW FILES: 1. AND 2.
+ * @param {RawClubDetails} rawClubDetailsData
+ * @param {RawGameweekStats} rawGameweekStatsData
+ * @returns {Model}
+ */
+const createDataModel = (
+  rawClubDetailsData,
+  rawGameweekStatsData,
+) => {
+
+  // this is gonna be the raw gameweekStats equivalent (redundant)
+  const learningProviderDocuments = mergeREFData(
+    refResults,
+    refContext,
+    documentTopicModels,
+  )
+///////////////////////////////////////////////////////////////////////////////////////
+  // Parse each learning provider, combining them with the other data
+  const learningProviders = rawLearningProvidersData.map(learningProvider =>
+    parseLearningProvider(
+      learningProvider,
+      townsData,
+      regions,
+      learningProviderDocuments,
+    ),
+  )
+  
+  // equivalently: Parse each club, combining them with the gameweekStats Data
+  // rawLearningProvidersData is the rawClubDetails data
+  const leagueStatistics = rawClubDetailsData.map(clubDetails =>
+    parseClubStatistics(
+      clubDetails,
+      rawGameweekStatsData,
+    ),
+  )
+///////////////////////////////////////////////////////////////////////////////////////
+  return {
+    leagueStatistics: leagueStatistics,
+  }
+}
+
+export default createDataModel

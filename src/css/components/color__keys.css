@@ -1,0 +1,99 @@
+.bc__swatch {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 5px;
+  margin-left: 2%;
+  white-space: nowrap;
+}
+
+.bc__colorkeys {
+  padding: 1% 2%;
+  justify-content: center;
+}
+
+.bc__color {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  vertical-align: bottom;
+  margin-right: 1%;
+  border: 1px solid;
+}
+
+.bc__label {
+  display: inline-block;
+  vertical-align: middle;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.label {
+  font-size: 12px;
+}
+
+/* ///// MEDIA QUERIES ////// */
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 375.98px) {
+  .bc__colorkeys {
+    justify-content: left;
+  }
+
+  .bc__swatch {
+    margin-left: 4%;
+  }
+
+  .label {
+    font-size: 11px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 376px) and (max-width: 575.98px) {
+  .bc__color {
+    width: 15px;
+    height: 15px;
+  }
+
+  .label {
+    font-size: clamp(12px, 3vw, 13px);
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .bc__colorkeys {
+    justify-content: left;
+  }
+
+  .label {
+    font-size: clamp(11px, 3vw, 12px);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .bc__color {
+    width: 15px;
+    height: 15px;
+  }
+
+  .label {
+    font-size: clamp(12px, 1vw, 13px);
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .bc__swatch {
+    margin-left: 3%;
+  }
+
+  .bc__color {
+    width: 16px;
+    height: 16px;
+  }
+
+  .label {
+    font-size: clamp(13px, 1vw, 14px);
+  }
+}

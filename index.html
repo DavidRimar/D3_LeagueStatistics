@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- SEO Information -->
+    <title>GARROWLAND STATISTICS</title>
+    <meta name="description" content="" />
+
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link href="./src/css/index.css" rel="stylesheet" />
+
+    <!-- Above-the-fold scripts -->
+    <script type="text/javascript" src="./d3/d3.v4.js"></script>
+  </head>
+
+  <body>
+    <!-- Site content -->
+
+    <header>
+      <div>
+        <a href="/">GARROWLAND UNITED</a>
+        <span class="header__league-stats" id="header__league-stats"
+          >League Statistics</span
+        >
+      </div>
+    </header>
+
+    <main class="main__grid">
+      <section id="d3__views" class="container-fluid">
+        <div class="row">
+          <div id="view__passes__aerial" class="col-sm-6">
+            <div id="dropdown__teams__aerial" class="row dropdown__teams"></div>
+            <div class="row bc__colorkeys">
+              <div class="bc__swatch">
+                <div id="bc__color__offensive" class="bc__color"></div>
+                <div id="bc__label__offensive" class="bc__label label"></div>
+              </div>
+              <div class="bc__swatch">
+                <div id="bc__color__middle" class="bc__color"></div>
+                <div id="bc__label__middle" class="bc__label label"></div>
+              </div>
+              <div class="bc__swatch">
+                <div id="bc__color__defensive" class="bc__color"></div>
+                <div id="bc__label__defensive" class="bc__label label"></div>
+              </div>
+            </div>
+            <div id="stackedBarChart__aerial" class="row svg-container"></div>
+          </div>
+          <div id="view__passes__direction" class="col-sm-6">
+            <div
+              id="dropdown__teams__direction"
+              class="row dropdown__teams"
+            ></div>
+            <div class="row bc__colorkeys">
+              <div class="bc__swatch">
+                <div id="bc__color__forward" class="bc__color"></div>
+                <div id="bc__label__forward" class="bc__label label"></div>
+              </div>
+              <div class="bc__swatch">
+                <div id="bc__color__lateral" class="bc__color"></div>
+                <div id="bc__label__lateral" class="bc__label label"></div>
+              </div>
+              <div class="bc__swatch">
+                <div id="bc__color__backward" class="bc__color"></div>
+                <div id="bc__label__backward" class="bc__label label"></div>
+              </div>
+            </div>
+            <div
+              id="stackedBarChart__direction"
+              class="row svg-container"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Below-the-fold scripts -->
+    <script type="module">
+      // import renderStackedBarchart from "./src/js/views/stackedBarchart/renderStackedBarchart.js"; // not used
+      // import filterByTeam from "./src/js/model/filterByTeam.js";
+      import createDataModel from "./src/js/model/createDataModel.js";
+      // import { TEAMS } from "./src/js/model/constants.js";
+      // import renderTeamDropdown from "./src/js/views/dropdown/renderTeamDropdown.js";
+      // import { handleTeamChange } from "./src/js/presenter/presentStackedBarchart1.js";
+      import { initViews } from "./src/js/presenter/presentMain.js";
+
+      ////////////////// INITIALISE APP START //////////////////
+      const initialiseApp = (error, rawGameweeksData) => {
+        if (error) {
+          console.error(`There is an error when loading the data`, error);
+          return;
+        }
+        // INSTANTIATE DATA MODEL
+        const model = createDataModel(rawGameweeksData);
+        const leagueStatistics = model.leagueStatistics;
+
+        // INSTANTIATE VIEWS
+        initViews(leagueStatistics);
+      };
+
+      ////////////////// INIT APP END //////////////////
+
+      // an object of all datasheets
+      const data = {
+        gameweeks: "./data/gameweekStats.csv"
+      };
+
+      // Queue and import the data
+      d3.queue()
+        .defer(d3.csv, data.gameweeks)
+        .await(initialiseApp);
+
+      /////////// INITIALISE APP METHOD END ///////////////////////////
+    </script>
+
+    <!-- Bootsrap scripts: jQuery, Popper, Bootrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

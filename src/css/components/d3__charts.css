@@ -1,0 +1,24 @@
+/* SVG START*/
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: top;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.svg-content {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 8%;
+}
+
+.rect__highlight {
+  stroke: black;
+  stroke-width: 2;
+}
+/* SVG END */
