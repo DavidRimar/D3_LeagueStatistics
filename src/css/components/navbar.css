@@ -1,0 +1,18 @@
+/*Extra small: 265 and below: the navbar icon and the navbar-toggler <button> should be smaller on smaller windows*/
+@media (max-width: 266px) {
+  .navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+  }
+
+  .navbar-toggler {
+    padding: 1%;
+  }
+}
+
+@media (min-width: 266.01px) and (max-width: 575px) {
+  .navbar-toggler-icon {
+    width: 1.2em;
+    height: 1.2em;
+  }
+}

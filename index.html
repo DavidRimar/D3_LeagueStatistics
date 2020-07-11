@@ -168,6 +168,20 @@
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
           <br>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
         </p>
       </section>
 
@@ -222,9 +236,10 @@
       crossorigin="anonymous"
     ></script>
     <script>
+        // SCROLLSPY (basic)
         $('body').scrollspy({target: '#navbar', offset: 65});
 
-          // Add smooth scrolling
+        // SCROLLSPY (animated)
         $('.nav-link').on('click', function (e) {
           // Check for a hash value
           if (this.hash !== '') {
@@ -240,17 +255,14 @@
             }, 950, function () {
               // Add hash to URL after scroll
               window.location.hash = hash - 55;
-
-              // Add hash (#) to URL when done scrolling (default click behavior), without jumping to hash
-              // if (history.pushState) {
-              //    history.pushState(null, null, hash);
-              // } else {
-              //     window.location.hash = hash;
-              // }
             });
-            // return false;
+
           }
         });
+
+        // WINDOW RESIZE LOG
+        const reportWindowSize = () => {console.log("window height", window.innerHeight), console.log("window width", window.innerWidth)};
+        window.addEventListener('resize', reportWindowSize);
     </script>
 
   </body>

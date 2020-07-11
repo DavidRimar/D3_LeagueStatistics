@@ -2,10 +2,16 @@
 @import url("./components/color__keys.css");
 @import url("./components/d3__charts.css");
 @import url("./components/section__headers.css");
+@import url("./components/navbar.css");
+
+/* FIXED TOP ISSUE SOLVED BY adding padding-top to the <body> tag*/
+body {
+  padding-top: 3.5rem;
+}
 
 .main__grid {
   background-color: #fcfff6;
-  padding-top: 12%;
+  /*padding-top: 12%;*/
 }
 
 #view__passes__aerial {
@@ -20,4 +26,11 @@
 
 p {
   padding: 20px 30px 0 30px;
+}
+
+/*Extra small: 235 and below:  INCREASE <body> PADDING*/
+@media (max-width: 235px) {
+  body {
+    padding-top: 5.3rem;
+  }
 }
