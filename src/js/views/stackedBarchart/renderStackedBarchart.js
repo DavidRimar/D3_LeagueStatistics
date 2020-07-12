@@ -33,21 +33,14 @@ const getMaxValue = layeredData => {
 };
 
 /**
+ * @param {CustomObj} customObj Chart specific variables as an object literal
+ * @param {any[]} dataset
+ * @param {ChartHandlers} handlers
  *
- * @property {any[]} dataset Text that goes above the dropdown
- * @property {ChartHandlers} handlers
  *
- * @param {Props} param0
  */
 
-const renderStackedBarchart = (
-  containerDomId,
-  dataSet,
-  keys,
-  customLabels,
-  customColorScales,
-  handlers
-) => {
+const renderStackedBarchart = (dataSet, customObj, handlers) => {
   // MARGIN, WIDTH, HEIGHT
   const margin = {
     top: 35,
@@ -62,15 +55,14 @@ const renderStackedBarchart = (
   const transitionDuraton = 850;
 
   // COLOR SCALES
-  const colorScales = customColorScales;
+  const colorScales = customObj.customColors;
 
   // LABELS VARIABLE
-  const colorKeyLabels = customLabels;
+  const colorKeyLabels = customObj.customLabels;
 
   // STACKED DATA
   console.log("Filtered data from renderStackedBarchart: ", dataSet);
-  const stackKeys = keys;
-  const stack = d3.stack().keys(stackKeys);
+  const stack = d3.stack().keys(customObj.stackKeys);
   const layeredData = stack(dataSet);
   console.log("layered data", layeredData);
 
@@ -100,7 +92,7 @@ const renderStackedBarchart = (
   const yAxis = d3.axisLeft().scale(yScale);
 
   // CONTAINER DOM ELEMENT
-  const container = d3.select(`#stackedBarChart__${containerDomId}`);
+  const container = d3.select(`#stackedBarChart__${customObj.containerDomId}`);
 
   // Create chart if it does not already exist
   if (container.property("childNodes").length === 0) {
@@ -122,7 +114,7 @@ const renderStackedBarchart = (
       svgContainer,
       xAxis,
       "g__x",
-      `x__${containerDomId}`,
+      `x__${customObj.containerDomId}`,
       `translate(${margin.left + 30},${height + 45})`,
       "GAMEWEEK",
       width / 2,
@@ -134,7 +126,7 @@ const renderStackedBarchart = (
       svgContainer,
       yAxis,
       "g__y",
-      `y__${containerDomId}`,
+      `y__${customObj.containerDomId}`,
       `translate(${margin.left + 30}, ${margin.top})`,
       "PASSES COMPLETED (per game)",
       -40,
@@ -146,7 +138,7 @@ const renderStackedBarchart = (
     addColorKeys(colorKeyLabels, colorScales);
 
     // ADD TOOLTIP (hidden)
-    addTooltip(svgContainer, containerDomId);
+    addTooltip(svgContainer, customObj.containerDomId);
   }
 
   const containerGroup = container.select("svg > g");
@@ -187,13 +179,13 @@ const renderStackedBarchart = (
       return yScale(d[0]) - yScale(d[1]); // length of the rectangle
     })
     .on("mouseover", (d, i, nodes) => {
-      handlers.handleMouseOver(d, i, nodes, containerDomId);
+      handlers.handleMouseOver(d, i, nodes, customObj.containerDomId);
     })
     .on("mouseout", (d, i, nodes) => {
-      handlers.handleMouseOut(d, i, nodes, containerDomId);
+      handlers.handleMouseOut(d, i, nodes, customObj.containerDomId);
     })
     .on("mousemove", (d, i, nodes) => {
-      handlers.handleMouseMove(d, i, nodes, containerDomId);
+      handlers.handleMouseMove(d, i, nodes, customObj.containerDomId);
     });
 
   // UPDATE PHASE
@@ -212,7 +204,7 @@ const renderStackedBarchart = (
     });
 
   // UPDATE TICKS
-  updateTicks(yAxis, `y__${containerDomId}`, transitionDuraton);
+  updateTicks(yAxis, `y__${customObj.containerDomId}`, transitionDuraton);
 };
 
 export default renderStackedBarchart;

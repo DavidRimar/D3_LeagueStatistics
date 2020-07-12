@@ -191,21 +191,11 @@
     <!-- Below-the-fold scripts -->
     <script type="module">
       import createDataModel from "./src/js/model/createDataModel.js";
-      import { initViews } from "./src/js/presenter/presentMain.js";
+      // import { initViews, setAnimation } from "./src/js/presenter/presentMain.js";
+      import { initialiseApp } from "./src/js/presenter/presentMain.js";
 
       ////////////////// INITIALISE APP START //////////////////
-      const initialiseApp = (error, rawGameweeksData) => {
-        if (error) {
-          console.error(`There is an error when loading the data`, error);
-          return;
-        }
-        // INSTANTIATE DATA MODEL
-        const model = createDataModel(rawGameweeksData);
-        const leagueStatistics = model.leagueStatistics;
 
-        // INSTANTIATE VIEWS
-        initViews(leagueStatistics);
-      };
       ////////////////// INIT APP END //////////////////
 
       const data = {
@@ -236,29 +226,7 @@
       crossorigin="anonymous"
     ></script>
     <script>
-        // SCROLLSPY (basic)
-        $('body').scrollspy({target: '#navbar', offset: 65});
 
-        // SCROLLSPY (animated)
-        $('.nav-link').on('click', function (e) {
-          // Check for a hash value
-          if (this.hash !== '') {
-            // Prevent default behavior
-            e.preventDefault();
-
-            // Store hash
-            const hash = this.hash;
-
-            // Animate smooth scroll
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top - 55
-            }, 950, function () {
-              // Add hash to URL after scroll
-              window.location.hash = hash - 55;
-            });
-
-          }
-        });
 
         // WINDOW RESIZE LOG
         const reportWindowSize = () => {console.log("window height", window.innerHeight), console.log("window width", window.innerWidth)};
