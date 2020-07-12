@@ -10,7 +10,6 @@
 const renderTeamDropdown = ({
   containerDOMElementID,
   dropdownValues,
-  labelText,
   data,
   handlers
 }) => {
@@ -24,7 +23,7 @@ const renderTeamDropdown = ({
     container
       .append("label")
       .attr("for", dropdownID)
-      .text(labelText)
+      .text("Select Your Team")
       .attr("vertical-align", "text-bottom");
 
     // Create <select> tag element for the dropdown
@@ -52,7 +51,7 @@ const renderTeamDropdown = ({
   if (handlers && handlers.handleChange) {
     dropdownSelect.on("change", () => {
       const value = d3.select(`#${dropdownID}`).property("value");
-      handlers.handleChange(value, data);
+      handlers.handleChange(value);
     });
   }
 };

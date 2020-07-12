@@ -32,23 +32,37 @@ export const DIRECTION_PASSES_KEYS = [
 ];
 
 // SHOTS
-export const SHOTS_LABELS = ["six", "eighteen", "twenty-four"];
-export const SHOTS_KEYS = [
-  "SHOTS_SIX_YARD",
-  "SHOTS_EIGHTEEN_YARD",
-  "SHOTS_TWENTYFOUR_YARD"
+export const SHOTS_LABELS = [
+  "shots__six",
+  "shots__eighteen",
+  "shots__twentyfour"
+];
+export const SHOTS_KEYS = ["SHOTS_6_YARD", "SHOTS_18_YARD", "SHOTS_24_YARD"];
+
+// BLOCKS
+export const BLOCKS_LABELS = [
+  "blocks__keeper",
+  "blocks__six",
+  "blocks__eighteen",
+  "blocks__twentyfour"
+];
+export const BLOCKS_KEYS = [
+  "BLOCKS_KEEPER",
+  "BLOCKS_6_YARD",
+  "BLOCKS_18_YARD",
+  "BLOCKS_24_YARD"
 ];
 
 // COLOR SCALES
 export const COLOR_SCALES_GOLD = ["#a67c00", "#ffbf00", "#ffdc73"];
 export const COLOR_SCALES_ORCHID = ["#4B0082", "#9932CC", "#DA70D6"];
-export const COLOR_SCALES_RED = ["#4D0000", "#B30000", "#FF3333", "#FF1919"];
+export const COLOR_SCALES_RED = ["#7A032B", "#CB1753", "#FF7CA8", "#FFE6EF"];
 export const COLOR_SCALES_GREEN = ["#098415", "#5CD749", "#B7FF98"];
 
 // IDs
 export const STACKEDCHART_IDs = {
-  AERIAL: "aerial",
-  DIRECTION: "direction",
+  AERIAL: "passes__aerial",
+  DIRECTION: "passes__direction",
   SHOTS: "shots",
   BLOCKS: "blocks"
 };
@@ -79,5 +93,12 @@ export const CHART_SPEC_SHOTS = {
   containerDomId: STACKEDCHART_IDs.SHOTS,
   stackKeys: SHOTS_KEYS,
   customLabels: SHOTS_LABELS,
+  customColors: COLOR_SCALES_GREEN
+};
+
+export const CHART_SPEC_BLOCKS = {
+  containerDomId: STACKEDCHART_IDs.BLOCKS,
+  stackKeys: BLOCKS_KEYS,
+  customLabels: BLOCKS_LABELS,
   customColors: COLOR_SCALES_RED
 };

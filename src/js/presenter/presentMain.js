@@ -2,12 +2,11 @@ import renderStackedBarchart from "../views/stackedBarchart/renderStackedBarchar
 import renderTeamDropdown from "../views/dropdown/renderTeamDropdown.js"; // THE VIEW
 import filterByTeam from "../model/filterByTeam.js"; // THE MODEL
 import * as constants from "../model/constants.js"; // THE MODEL
-// import { CHART_SPEC_AERIAL, CHART_SPEC_DIRECTION } from "../model/constants.js"; // THE MODEL
 import { chartHandlers } from "./presentStackedBarchart.js"; // Chart-specific Handlers
 import createDataModel from "../model/createDataModel.js";
 
 /**
- * HANDLE TEAM CHANGE (StackedBarchart DIRECTION)
+ * HANDLE TEAM CHANGE (general)
  * 1. gameweeks data is filtered based on the stored value
  * 2. Call renderStackedBarChart function with arguments
  *
@@ -15,35 +14,11 @@ import createDataModel from "../model/createDataModel.js";
  * // @param {string} value
  * // @returns {void}
  */
-export const handleTeamChangeDirection = (value, leagueStatistics) => {
+export const handleTeamChange = (value, leagueStatistics, chartCustomVars) => {
   // 1.
   const filteredDataSet = filterByTeam(value, leagueStatistics);
   // 2.
-  renderStackedBarchart(
-    filteredDataSet,
-    constants.CHART_SPEC_DIRECTION,
-    chartHandlers
-  );
-};
-
-/**
- * HANDLE TEAM CHANGE (StackedBarchart AERIAL)
- * 1. gameweeks data is filtered based on the stored value
- * 2. Call renderStackedBarChart function with arguments
- *
- * // @param {Model} leagueStatistics // this is our data
- * // @param {string} value
- * // @returns {void}
- */
-export const handleTeamChangeAerial = (value, leagueStatistics) => {
-  // 1.
-  const filteredDataSet = filterByTeam(value, leagueStatistics);
-  // 2.
-  renderStackedBarchart(
-    filteredDataSet,
-    constants.CHART_SPEC_AERIAL,
-    chartHandlers
-  );
+  renderStackedBarchart(filteredDataSet, chartCustomVars, chartHandlers);
 };
 
 /**
@@ -62,13 +37,12 @@ export const initViews = leagueStatistics => {
   renderTeamDropdown({
     containerDOMElementID: constants.TEAM_DROPDOWN_IDs.AERIAL,
     dropdownValues: Object.entries(constants.TEAMS),
-    labelText: "Select Your Team",
     data: leagueStatistics,
     handlers: {
       /** @param {string} value */
       /** @param {leagueStatistics[]} leagueStatistic */
-      handleChange: (value, leagueStatistics) => {
-        handleTeamChangeAerial(value, leagueStatistics);
+      handleChange: value => {
+        handleTeamChange(value, leagueStatistics, constants.CHART_SPEC_AERIAL);
       }
     }
   });
@@ -77,17 +51,49 @@ export const initViews = leagueStatistics => {
   renderTeamDropdown({
     containerDOMElementID: constants.TEAM_DROPDOWN_IDs.DIRECTION,
     dropdownValues: Object.entries(constants.TEAMS),
-    labelText: "Select Your Team",
     data: leagueStatistics,
     handlers: {
       /** @param {string} value */
       /** @param {leagueStatistics[]} leagueStatistic */
-      handleChange: (value, leagueStatistics) => {
-        handleTeamChangeDirection(value, leagueStatistics);
+      handleChange: value => {
+        handleTeamChange(
+          value,
+          leagueStatistics,
+          constants.CHART_SPEC_DIRECTION
+        );
       }
     }
   });
-  // RENDER CHART(s) (default)
+
+  // Dropdown: SHOTS
+  renderTeamDropdown({
+    containerDOMElementID: constants.TEAM_DROPDOWN_IDs.SHOTS,
+    dropdownValues: Object.entries(constants.TEAMS),
+    data: leagueStatistics,
+    handlers: {
+      /** @param {string} value */
+      /** @param {leagueStatistics[]} leagueStatistic */
+      handleChange: value => {
+        handleTeamChange(value, leagueStatistics, constants.CHART_SPEC_SHOTS);
+      }
+    }
+  });
+
+  // Dropdown: BLOCKS
+  renderTeamDropdown({
+    containerDOMElementID: constants.TEAM_DROPDOWN_IDs.BLOCKS,
+    dropdownValues: Object.entries(constants.TEAMS),
+    data: leagueStatistics,
+    handlers: {
+      /** @param {string} value */
+      /** @param {leagueStatistics[]} leagueStatistic */
+      handleChange: value => {
+        handleTeamChange(value, leagueStatistics, constants.CHART_SPEC_BLOCKS);
+      }
+    }
+  });
+
+  //// RENDER CHART(s) (default) ////
   // 1.
   const defaultValue = "Garrowland United";
   // 2.
@@ -101,6 +107,17 @@ export const initViews = leagueStatistics => {
   renderStackedBarchart(
     filteredDataSet,
     constants.CHART_SPEC_DIRECTION,
+    chartHandlers
+  );
+
+  renderStackedBarchart(
+    filteredDataSet,
+    constants.CHART_SPEC_SHOTS,
+    chartHandlers
+  );
+  renderStackedBarchart(
+    filteredDataSet,
+    constants.CHART_SPEC_BLOCKS,
     chartHandlers
   );
 };

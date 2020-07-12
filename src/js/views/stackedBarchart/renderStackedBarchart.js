@@ -128,7 +128,7 @@ const renderStackedBarchart = (dataSet, customObj, handlers) => {
       "g__y",
       `y__${customObj.containerDomId}`,
       `translate(${margin.left + 30}, ${margin.top})`,
-      "PASSES COMPLETED (per game)",
+      `${customObj.containerDomId} (per game)`,
       -40,
       svgHeight / 2.5,
       -90

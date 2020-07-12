@@ -45,13 +45,13 @@
         <div class="collapse navbar-collapse" id="navitemsCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#home__section">Home</a>
+              <a class="nav-link" href="#home__section">Project Description</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#passes__section">Passes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#shots__section">Shots</a>
+              <a class="nav-link" href="#shots__section">Shots & Blocks</a>
             </li>
           </ul>
         </div>
@@ -78,8 +78,9 @@
             </h2>
       </section>
 
-      <section id="d3__views" class="container-fluid">
+      <section id="d3__views__passes" class="container-fluid">
 
+        <!-- PASSES AERIAL -->
         <div class="row">
           <div id="view__passes__aerial" class="col-sm-6">
             <div id="dropdown__teams__aerial" class="row dropdown__teams"></div>
@@ -97,8 +98,9 @@
                 <div id="bc__label__defensive" class="bc__label label"></div>
               </div>
             </div>
-            <div id="stackedBarChart__aerial" class="row svg-container"></div>
+           <div id="stackedBarChart__passes__aerial" class="row svg-container"></div>
           </div>
+          <!-- PASSES DIRECTION -->
           <div id="view__passes__direction" class="col-sm-6">
             <div
               id="dropdown__teams__direction"
@@ -119,7 +121,7 @@
               </div>
             </div>
             <div
-              id="stackedBarChart__direction"
+              id="stackedBarChart__passes__direction"
               class="row svg-container"
             ></div>
           </div>
@@ -128,61 +130,71 @@
 
       <section id="shots__section" class="section__header">
           <h2>
-              Shots
+              Shots & Blocks
             </h2>
-          </h2>
+
           <p class="mx-4">This project uses D3 version 4 to render fictional league statistics in the form of stacked barcharts.
             The chart views are highly customizable and build with the ease of re-usability in mind.
           <br>
           The application is also responsive and easy to use on all device, thanks to the grid system.
           <br>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, accusamus aliquam delectus quis nisi, cupiditate quam illum ipsa. Rem, cum!
+      </section>
 
+      <section id="d3__views__shots__blocks" class="container-fluid">
 
-          <br>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam adipisci nihil eaque dignissimos quo corrupti totam iusto beatae reiciendis, enim asperiores sit, animi obcaecati quis nobis error ex ducimus perspiciatis?
+        <div class="row">
 
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, ac
-        </p>
+          <!-- SHOTS -->
+          <div id="view__shots" class="col-sm-6">
+            <div id="dropdown__teams__shots" class="row dropdown__teams"></div>
+            <div class="row bc__colorkeys">
+              <div class="bc__swatch">
+                <div id="bc__color__shots__six" class="bc__color"></div>
+                <div id="bc__label__shots__six" class="bc__label label"></div>
+              </div>
+              <div class="bc__swatch">
+                <div id="bc__color__shots__eighteen" class="bc__color"></div>
+                <div id="bc__label__shots__eighteen" class="bc__label label"></div>
+              </div>
+              <div class="bc__swatch">
+                <div id="bc__color__shots__twentyfour" class="bc__color"></div>
+                <div id="bc__label__shots__twentyfour" class="bc__label label"></div>
+              </div>
+            </div>
+            <div id="stackedBarChart__shots" class="row svg-container"></div>
+          </div>
+
+          <!-- BLOCKS -->
+          <div id="view__blocks" class="col-sm-6">
+            <div
+              id="dropdown__teams__blocks"
+              class="row dropdown__teams"
+            ></div>
+            <div class="row bc__colorkeys">
+              <div class="bc__swatch">
+                  <div id="bc__color__blocks__keeper" class="bc__color"></div>
+                  <div id="bc__label__blocks__keeper" class="bc__label label"></div>
+                </div>
+              <div class="bc__swatch">
+                <div id="bc__color__blocks__six" class="bc__color"></div>
+                <div id="bc__label__blocks__six" class="bc__label label"></div>
+              </div>
+              <div class="bc__swatch">
+                <div id="bc__color__blocks__eighteen" class="bc__color"></div>
+                <div id="bc__label__blocks__eighteen" class="bc__label label"></div>
+              </div>
+              <div class="bc__swatch">
+                <div id="bc__color__blocks__twentyfour" class="bc__color"></div>
+                <div id="bc__label__blocks__twentyfour" class="bc__label label"></div>
+              </div>
+            </div>
+            <div
+              id="stackedBarChart__blocks"
+              class="row svg-container"
+            ></div>
+          </div>
+        </div>
       </section>
 
 
@@ -190,19 +202,13 @@
 
     <!-- Below-the-fold scripts -->
     <script type="module">
-      import createDataModel from "./src/js/model/createDataModel.js";
-      // import { initViews, setAnimation } from "./src/js/presenter/presentMain.js";
       import { initialiseApp } from "./src/js/presenter/presentMain.js";
-
-      ////////////////// INITIALISE APP START //////////////////
-
-      ////////////////// INIT APP END //////////////////
 
       const data = {
         gameweeks: "./data/gameweekStats.csv"
       };
 
-      // QUEUE AND IMPORT DATA
+      // QUEUE, IMPORT DATA AND CALL initialiseApp
       d3.queue()
         .defer(d3.csv, data.gameweeks)
         .await(initialiseApp);

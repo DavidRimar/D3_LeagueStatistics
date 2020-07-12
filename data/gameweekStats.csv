@@ -1,169 +1,169 @@
-CLUB_NAME,CLUB_ID,GAMEWEEK_ID,GAMEWEEK_ID_NUM,PASSES_OFFENSIVE,PASSES_MIDDLE,PASSES_DEFENSIVE,PASSES_FORWARD,PASSES_LATERAL,PASSES_BACKWARD,OUTCOME,OPPOSITION
-Garrowland United,1,GW1,1,44,199,298,144,98,299,WIN,Vagabundos FC
-Garrowland United,1,GW2,2,33,256,334,108,99,416,WIN,Coal City
-Garrowland United,1,GW3,3,59,251,299,122,191,296,WIN,Hollytown FC
-Garrowland United,1,GW4,4,89,296,250,99,167,369,WIN,Dunnyland Sunnyside
-Garrowland United,1,GW5,5,111,231,279,123,144,354,DRAW,Thornton AFC
-Garrowland United,1,GW6,6,58,178,199,79,165,191,WIN,South Preston Saints
-Garrowland United,1,GW7,7,60,139,145,77,100,167,WIN,Black Norwood
-Garrowland United,1,GW8,8,77,189,223,111,78,300,DRAW,West Woodwasp
-Garrowland United,1,GW9,9,76,219,232,123,177,227,LOSS,Vanatallin FC
-Garrowland United,1,GW10,10,69,191,193,113,155,185,WIN,Fancy United
-Garrowland United,1,GW11,11,31,150,199,66,89,225,LOSS,Niangolang DC
-Garrowland United,1,GW12,12,76,211,148,89,122,224,DRAW,Bellevue Sharks
-Vanatallin FC,2,GW1,1,123,255,321,134,231,334,WIN,Thornton AFC
-Vanatallin FC,2,GW2,2,211,213,298,154,239,329,WIN,South Preston Saints
-Vanatallin FC,2,GW3,3,134,187,301,175,155,292,WIN,Black Norwood
-Vanatallin FC,2,GW4,4,124,196,277,111,198,288,WIN,West Woodwasp
-Vanatallin FC,2,GW5,5,166,200,343,149,231,329,WIN,Bergerund United
-Vanatallin FC,2,GW6,6,100,139,432,112,90,469,WIN,Fancy United
-Vanatallin FC,2,GW7,7,97,231,221,124,122,303,DRAW,Niangolang DC
-Vanatallin FC,2,GW8,8,143,252,299,222,139,333,DRAW,Bellevue Sharks
-Vanatallin FC,2,GW9,9,123,229,319,234,133,304,WIN,Garrowland United
-Vanatallin FC,2,GW10,10,145,225,412,210,178,394,WIN,Vagabundos FC
-Vanatallin FC,2,GW11,11,112,180,301,123,219,251,WIN,Coal City
-Vanatallin FC,2,GW12,12,90,233,453,288,115,373,WIN,Hollytown FC
-Bellevue Sharks,3,GW1,1,39,199,216,88,155,211,WIN,Coal City
-Bellevue Sharks,3,GW2,2,33,232,223,122,126,240,WIN,Hollytown FC
-Bellevue Sharks,3,GW3,3,67,231,301,119,187,293,WIN,Dunnyland Sunnyside
-Bellevue Sharks,3,GW4,4,92,298,222,109,208,295,WIN,Thornton AFC
-Bellevue Sharks,3,GW5,5,55,207,239,99,188,214,DRAW,South Preston Saints
-Bellevue Sharks,3,GW6,6,59,177,217,81,178,194,DRAW,Black Norwood
-Bellevue Sharks,3,GW7,7,77,200,209,86,185,215,LOSS,West Woodwasp
-Bellevue Sharks,3,GW8,8,39,105,219,74,144,145,DRAW,Vanatallin FC
-Bellevue Sharks,3,GW9,9,49,149,199,77,155,165,WIN,Fancy United
-Bellevue Sharks,3,GW10,10,87,180,249,66,109,341,LOSS,Niangolang DC
-Bellevue Sharks,3,GW11,11,97,188,280,90,189,286,WIN,Bergerund United
-Bellevue Sharks,3,GW12,12,60,123,245,99,150,179,DRAW,Garrowland United
-Niangolang DC,4,GW1,1,112,134,159,155,101,149,WIN,Hollytown FC
-Niangolang DC,4,GW2,2,124,144,199,144,139,184,WIN,Dunnyland Sunnyside
-Niangolang DC,4,GW3,3,101,155,204,146,99,215,WIN,Thornton AFC
-Niangolang DC,4,GW4,4,98,188,243,171,80,278,WIN,South Preston Saints
-Niangolang DC,4,GW5,5,122,222,178,98,141,283,DRAW,Black Norwood
-Niangolang DC,4,GW6,6,124,179,159,133,122,207,LOSS,West Woodwasp
-Niangolang DC,4,GW7,7,101,211,184,109,161,226,DRAW,Vanatallin FC
-Niangolang DC,4,GW8,8,99,177,178,111,109,234,WIN,Fancy United
-Niangolang DC,4,GW9,9,79,176,192,137,129,181,WIN,Bergerund United
-Niangolang DC,4,GW10,10,109,200,190,119,115,265,WIN,Bellevue Sharks
-Niangolang DC,4,GW11,11,89,191,123,132,149,122,WIN,Garrowland United
-Niangolang DC,4,GW12,12,72,198,143,103,120,190,WIN,Vagabundos FC
-Fancy United,5,GW1,1,22,119,232,33,147,193,WIN,Dunnyland Sunnyside
-Fancy United,5,GW2,2,29,109,210,45,109,194,LOSS,Thornton AFC
-Fancy United,5,GW3,3,45,123,197,67,122,176,LOSS,South Preston Saints
-Fancy United,5,GW4,4,35,156,208,65,131,203,LOSS,Black Norwood
-Fancy United,5,GW5,5,29,190,192,57,128,226,LOSS,West Woodwasp
-Fancy United,5,GW6,6,11,102,131,44,77,123,LOSS,Vanatallin FC
-Fancy United,5,GW7,7,50,152,153,59,97,199,WIN,Bergerund United
-Fancy United,5,GW8,8,22,99,230,76,55,220,LOSS,Niangolang DC
-Fancy United,5,GW9,9,38,102,221,66,69,226,LOSS,Bellevue Sharks
-Fancy United,5,GW10,10,36,109,278,78,123,222,LOSS,Garrowland United
-Fancy United,5,GW11,11,45,133,232,55,128,227,LOSS,Vagabundos FC
-Fancy United,5,GW12,12,66,106,219,69,91,231,WIN,Coal City
-West Woodwasp,6,GW1,1,95,144,214,77,101,275,WIN,South Preston Saints
-West Woodwasp,6,GW2,2,98,177,256,144,100,287,DRAW,Black Norwood
-West Woodwasp,6,GW3,3,90,179,275,127,126,291,WIN,Bergerund United
-West Woodwasp,6,GW4,4,88,191,271,90,187,273,LOSS,Vanatallin FC
-West Woodwasp,6,GW5,5,142,321,232,233,190,272,WIN,Fancy United
-West Woodwasp,6,GW6,6,67,153,311,121,159,251,WIN,Niangolang DC
-West Woodwasp,6,GW7,7,79,167,321,106,178,283,WIN,Bellevue Sharks
-West Woodwasp,6,GW8,8,99,198,279,105,195,276,DRAW,Garrowland United
-West Woodwasp,6,GW9,9,78,188,234,145,106,249,WIN,Vagabundos FC
-West Woodwasp,6,GW10,10,81,277,293,201,144,306,WIN,Coal City
-West Woodwasp,6,GW11,11,45,145,241,99,149,183,WIN,Hollytown FC
-West Woodwasp,6,GW12,12,96,183,282,155,138,268,WIN,Dunnyland Sunnyside
-Bergerund United,7,GW1,1,57,100,145,75,103,124,LOSS,Black Norwood
-Bergerund United,7,GW2,2,66,134,199,89,122,188,WIN,Vagabundos FC
-Bergerund United,7,GW3,3,13,141,185,37,109,193,LOSS,West Woodwasp
-Bergerund United,7,GW4,4,63,138,205,79,143,184,DRAW,Coal City
-Bergerund United,7,GW5,5,12,88,113,34,76,103,LOSS,Vanatallin FC
-Bergerund United,7,GW6,6,59,177,176,115,112,185,WIN,Hollytown FC
-Bergerund United,7,GW7,7,77,123,185,111,134,140,LOSS,Fancy United
-Bergerund United,7,GW8,8,63,141,197,121,107,173,LOSS,Dunnyland Sunnyside
-Bergerund United,7,GW9,9,35,88,134,61,74,122,LOSS,Niangolang DC
-Bergerund United,7,GW10,10,45,105,132,65,98,119,LOSS,Thornton AFC
-Bergerund United,7,GW11,11,44,92,161,51,71,175,LOSS,Bellevue Sharks
-Bergerund United,7,GW12,12,61,101,190,98,99,155,DRAW,South Preston Saints
-Thornton AFC,8,GW1,1,45,88,166,59,79,161,LOSS,Vanatallin FC
-Thornton AFC,8,GW2,2,101,155,188,128,158,158,WIN,Fancy United
-Thornton AFC,8,GW3,3,67,99,175,91,89,161,LOSS,Niangolang DC
-Thornton AFC,8,GW4,4,77,134,178,92,104,193,LOSS,Bellevue Sharks
-Thornton AFC,8,GW5,5,89,135,200,104,133,187,DRAW,Garrowland United
-Thornton AFC,8,GW6,6,151,156,231,177,135,226,WIN,Vagabundos FC
-Thornton AFC,8,GW7,7,121,155,151,116,121,190,DRAW,Coal City
-Thornton AFC,8,GW8,8,133,166,189,135,90,263,WIN,Hollytown FC
-Thornton AFC,8,GW9,9,143,146,166,144,110,201,WIN,Dunnyland Sunnyside
-Thornton AFC,8,GW10,10,134,180,180,146,101,247,WIN,Bergerund United
-Thornton AFC,8,GW11,11,101,180,203,154,109,221,WIN,South Preston Saints
-Thornton AFC,8,GW12,12,105,167,170,131,159,152,WIN,Black Norwood
-Black Norwood,9,GW1,1,88,155,164,95,105,207,WIN,Bergerund United
-Black Norwood,9,GW2,2,85,120,178,67,106,210,DRAW,West Woodwasp
-Black Norwood,9,GW3,3,33,98,144,56,77,142,LOSS,Vanatallin FC
-Black Norwood,9,GW4,4,117,158,188,123,159,181,WIN,Fancy United
-Black Norwood,9,GW5,5,55,127,158,79,134,127,DRAW,Niangolang DC
-Black Norwood,9,GW6,6,58,145,108,71,121,119,DRAW,Bellevue Sharks
-Black Norwood,9,GW7,7,65,135,103,69,119,115,LOSS,Garrowland United
-Black Norwood,9,GW8,8,104,166,155,89,150,186,WIN,Vagabundos FC
-Black Norwood,9,GW9,9,106,164,158,87,167,174,WIN,Coal City
-Black Norwood,9,GW10,10,156,151,190,96,165,236,WIN,Hollytown FC
-Black Norwood,9,GW11,11,78,134,190,65,124,213,LOSS,Dunnyland Sunnyside
-Black Norwood,9,GW12,12,74,121,139,66,88,180,LOSS,Thornton AFC
-Vagabundos AFC,10,GW1,1,35,100,131,44,90,132,LOSS,Garrowland United
-Vagabundos AFC,10,GW2,2,33,107,149,47,86,156,LOSS,Bergerund United
-Vagabundos AFC,10,GW3,3,48,137,166,69,93,189,DRAW,Coal City
-Vagabundos AFC,10,GW4,4,77,154,164,98,144,153,WIN,Hollytown FC
-Vagabundos AFC,10,GW5,5,45,102,167,88,102,124,LOSS,Dunnyland Sunnyside
-Vagabundos AFC,10,GW6,6,41,131,141,87,95,131,LOSS,Thornton AFC
-Vagabundos AFC,10,GW7,7,65,115,154,100,101,133,LOSS,South Preston Saints
-Vagabundos AFC,10,GW8,8,66,109,155,111,90,129,LOSS,Black Norwood
-Vagabundos AFC,10,GW9,9,22,99,105,61,55,110,LOSS,West Woodwasp
-Vagabundos AFC,10,GW10,10,27,87,95,42,67,100,LOSS,Vanatallin FC
-Vagabundos AFC,10,GW11,11,78,166,164,104,138,166,WIN,Fancy United
-Vagabundos AFC,10,GW12,12,18,68,105,44,72,75,LOSS,Niangolang DC
-Dunnyland Sunnyside,11,GW1,1,55,122,166,56,111,176,LOSS,Fancy United
-Dunnyland Sunnyside,11,GW2,2,13,77,141,44,79,108,LOSS,Niangolang DC
-Dunnyland Sunnyside,11,GW3,3,19,141,121,66,76,139,LOSS,Bellevue Sharks
-Dunnyland Sunnyside,11,GW4,4,44,101,104,64,76,109,LOSS,Garrowland United
-Dunnyland Sunnyside,11,GW5,5,76,103,122,88,87,126,WIN,Vagabundos FC
-Dunnyland Sunnyside,11,GW6,6,66,77,133,90,67,119,LOSS,Coal City
-Dunnyland Sunnyside,11,GW7,7,104,156,130,115,66,209,DRAW,Hollytown FC
-Dunnyland Sunnyside,11,GW8,8,95,144,177,162,88,166,WIN,Bergerund United
-Dunnyland Sunnyside,11,GW9,9,53,122,122,66,67,164,LOSS,Thornton AFC
-Dunnyland Sunnyside,11,GW10,10,34,123,115,45,76,151,LOSS,South Preston Saints
-Dunnyland Sunnyside,11,GW11,11,54,115,190,103,98,158,WIN,Black Norwood
-Dunnyland Sunnyside,11,GW12,12,31,65,122,47,33,138,LOSS,West Woodwasp
-Hollytown FC,12,GW1,1,14,55,77,41,55,50,LOSS,Niangolang DC
-Hollytown FC,12,GW2,2,16,65,78,33,57,69,LOSS,Bellevue Sharks
-Hollytown FC,12,GW3,3,24,57,121,39,65,98,LOSS,Garrowland United
-Hollytown FC,12,GW4,4,66,105,105,69,88,119,LOSS,Vagabundos FC
-Hollytown FC,12,GW5,5,68,116,109,78,82,133,LOSS,Coal City
-Hollytown FC,12,GW6,6,54,90,144,74,80,134,LOSS,Bergerund United
-Hollytown FC,12,GW7,7,43,89,147,68,99,112,DRAW,Dunnyland Sunnyside
-Hollytown FC,12,GW8,8,41,82,134,88,37,132,LOSS,Thornton AFC
-Hollytown FC,12,GW9,9,55,105,147,89,122,96,DRAW,South Preston Saints
-Hollytown FC,12,GW10,10,31,111,141,100,66,117,LOSS,Black Norwood
-Hollytown FC,12,GW11,11,27,84,89,77,44,79,LOSS,West Woodwasp
-Hollytown FC,12,GW12,12,23,88,120,67,32,132,LOSS,Vanatallin FC
-South Preston Saints,13,GW1,1,26,70,96,44,41,107,LOSS,West Woodwasp
-South Preston Saints,13,GW2,2,33,78,124,55,65,115,LOSS,Vanatallin FC
-South Preston Saints,13,GW3,3,59,178,201,99,137,202,WIN,Fancy United
-South Preston Saints,13,GW4,4,43,67,105,66,61,88,LOSS,Niangolang DC
-South Preston Saints,13,GW5,5,56,101,107,41,111,112,DRAW,Bellevue Sharks
-South Preston Saints,13,GW6,6,65,64,154,51,66,166,LOSS,Garrowland United
-South Preston Saints,13,GW7,7,78,155,198,143,104,184,WIN,Vagabundos FC
-South Preston Saints,13,GW8,8,87,145,233,111,141,213,DRAW,Coal City
-South Preston Saints,13,GW9,9,101,122,243,100,99,267,DRAW,Hollytown FC
-South Preston Saints,13,GW10,10,77,175,252,95,135,274,WIN,Dunnyland Sunnyside
-South Preston Saints,13,GW11,11,61,111,123,69,70,156,LOSS,Thornton AFC
-South Preston Saints,13,GW12,12,61,151,155,97,55,215,DRAW,Bergerund United
-Coal City,14,GW1,1,54,101,122,65,45,167,LOSS,Bellevue Sharks
-Coal City,14,GW2,2,52,91,155,77,66,155,LOSS,Garrowland United
-Coal City,14,GW3,3,85,151,165,78,65,258,DRAW,Vagabundos FC
-Coal City,14,GW4,4,58,99,167,66,82,176,DRAW,Bergerund United
-Coal City,14,GW5,5,116,144,165,112,109,204,WIN,Hollytown FC
-Coal City,14,GW6,6,115,121,147,90,101,192,WIN,Dunnyland Sunnyside
-Coal City,14,GW7,7,77,122,105,94,77,133,DRAW,Thornton AFC
-Coal City,14,GW8,8,91,88,122,117,55,129,DRAW,South Preston Saints
-Coal City,14,GW9,9,45,78,127,44,39,167,LOSS,Black Norwood
-Coal City,14,GW10,10,33,89,116,49,71,118,LOSS,West Woodwasp
-Coal City,14,GW11,11,34,71,109,56,56,102,LOSS,Vanatallin FC
-Coal City,14,GW12,12,66,113,138,68,57,192,LOSS,Fancy United
+CLUB_NAME,CLUB_ID,GAMEWEEK_ID,GAMEWEEK_ID_NUM,PASSES_OFFENSIVE,PASSES_MIDDLE,PASSES_DEFENSIVE,PASSES_FORWARD,PASSES_LATERAL,PASSES_BACKWARD,SHOTS_6_YARD,SHOTS_18_YARD,SHOTS_24_YARD,BLOCKS_KEEPER,BLOCKS_6_YARD,BLOCKS_18_YARD,BLOCKS_24_YARD,OUTCOME,OPPOSITION
+Garrowland United,1,GW1,1,44,199,298,144,98,299,9,12,5,3,5,5,1,WIN,Vagabundos FC
+Garrowland United,1,GW2,2,33,256,334,108,99,416,13,5,6,2,1,2,1,WIN,Coal City
+Garrowland United,1,GW3,3,59,251,299,122,191,296,11,8,11,1,4,8,0,WIN,Hollytown FC
+Garrowland United,1,GW4,4,89,296,250,99,167,369,19,11,4,1,3,7,1,WIN,Dunnyland Sunnyside
+Garrowland United,1,GW5,5,111,231,279,123,144,354,16,2,8,6,1,3,0,DRAW,Thornton AFC
+Garrowland United,1,GW6,6,58,178,199,79,165,191,8,9,11,1,5,2,0,WIN,South Preston Saints
+Garrowland United,1,GW7,7,60,139,145,77,100,167,18,8,14,7,3,7,3,WIN,Black Norwood
+Garrowland United,1,GW8,8,77,189,223,111,78,300,16,12,12,5,2,2,1,DRAW,West Woodwasp
+Garrowland United,1,GW9,9,76,219,232,123,177,227,4,3,7,6,1,6,1,LOSS,Vanatallin FC
+Garrowland United,1,GW10,10,69,191,193,113,155,185,18,8,4,7,1,5,3,WIN,Fancy United
+Garrowland United,1,GW11,11,31,150,199,66,89,225,12,8,14,7,3,5,1,LOSS,Niangolang DC
+Garrowland United,1,GW12,12,76,211,148,89,122,224,8,4,16,3,2,6,0,DRAW,Bellevue Sharks
+Vanatallin FC,2,GW1,1,123,255,321,134,231,334,5,4,7,2,7,15,4,WIN,Thornton AFC
+Vanatallin FC,2,GW2,2,211,213,298,154,239,329,10,5,14,7,6,13,3,WIN,South Preston Saints
+Vanatallin FC,2,GW3,3,134,187,301,175,155,292,10,7,6,5,3,12,1,WIN,Black Norwood
+Vanatallin FC,2,GW4,4,124,196,277,111,198,288,10,7,12,5,6,12,2,WIN,West Woodwasp
+Vanatallin FC,2,GW5,5,166,200,343,149,231,329,10,4,19,1,4,10,1,WIN,Bergerund United
+Vanatallin FC,2,GW6,6,100,139,432,112,90,469,5,12,11,2,8,15,2,WIN,Fancy United
+Vanatallin FC,2,GW7,7,97,231,221,124,122,303,8,12,16,4,1,16,2,DRAW,Niangolang DC
+Vanatallin FC,2,GW8,8,143,252,299,222,139,333,9,8,11,3,9,11,3,DRAW,Bellevue Sharks
+Vanatallin FC,2,GW9,9,123,229,319,234,133,304,10,10,6,5,4,12,4,WIN,Garrowland United
+Vanatallin FC,2,GW10,10,145,225,412,210,178,394,10,7,11,5,4,14,2,WIN,Vagabundos FC
+Vanatallin FC,2,GW11,11,112,180,301,123,219,251,9,11,20,7,2,12,4,WIN,Coal City
+Vanatallin FC,2,GW12,12,90,233,453,288,115,373,10,4,20,2,8,15,4,WIN,Hollytown FC
+Bellevue Sharks,3,GW1,1,39,199,216,88,155,211,7,5,14,7,9,13,2,WIN,Coal City
+Bellevue Sharks,3,GW2,2,33,232,223,122,126,240,8,9,7,1,9,11,4,WIN,Hollytown FC
+Bellevue Sharks,3,GW3,3,67,231,301,119,187,293,7,8,13,3,3,10,3,WIN,Dunnyland Sunnyside
+Bellevue Sharks,3,GW4,4,92,298,222,109,208,295,5,4,14,5,2,11,3,WIN,Thornton AFC
+Bellevue Sharks,3,GW5,5,55,207,239,99,188,214,6,3,13,3,6,9,3,DRAW,South Preston Saints
+Bellevue Sharks,3,GW6,6,59,177,217,81,178,194,7,12,12,3,7,10,1,DRAW,Black Norwood
+Bellevue Sharks,3,GW7,7,77,200,209,86,185,215,6,7,6,5,9,13,3,LOSS,West Woodwasp
+Bellevue Sharks,3,GW8,8,39,105,219,74,144,145,6,8,10,4,7,11,2,DRAW,Vanatallin FC
+Bellevue Sharks,3,GW9,9,49,149,199,77,155,165,5,6,6,5,8,8,1,WIN,Fancy United
+Bellevue Sharks,3,GW10,10,87,180,249,66,109,341,8,8,10,7,8,13,2,LOSS,Niangolang DC
+Bellevue Sharks,3,GW11,11,97,188,280,90,189,286,7,4,11,6,3,10,3,WIN,Bergerund United
+Bellevue Sharks,3,GW12,12,60,123,245,99,150,179,6,11,9,5,1,8,3,DRAW,Garrowland United
+Niangolang DC,4,GW1,1,112,134,159,155,101,149,6,10,13,10,12,15,3,WIN,Hollytown FC
+Niangolang DC,4,GW2,2,124,144,199,144,139,184,5,6,17,10,8,14,3,WIN,Dunnyland Sunnyside
+Niangolang DC,4,GW3,3,101,155,204,146,99,215,8,4,19,5,7,9,2,WIN,Thornton AFC
+Niangolang DC,4,GW4,4,98,188,243,171,80,278,8,12,17,8,10,8,2,WIN,South Preston Saints
+Niangolang DC,4,GW5,5,122,222,178,98,141,283,8,3,13,7,7,14,1,DRAW,Black Norwood
+Niangolang DC,4,GW6,6,124,179,159,133,122,207,5,10,10,5,5,10,4,LOSS,West Woodwasp
+Niangolang DC,4,GW7,7,101,211,184,109,161,226,8,11,6,4,6,14,2,DRAW,Vanatallin FC
+Niangolang DC,4,GW8,8,99,177,178,111,109,234,6,12,8,5,6,16,4,WIN,Fancy United
+Niangolang DC,4,GW9,9,79,176,192,137,129,181,8,9,6,9,7,14,2,WIN,Bergerund United
+Niangolang DC,4,GW10,10,109,200,190,119,115,265,8,6,11,2,7,11,1,WIN,Bellevue Sharks
+Niangolang DC,4,GW11,11,89,191,123,132,149,122,8,9,12,10,11,11,2,WIN,Garrowland United
+Niangolang DC,4,GW12,12,72,198,143,103,120,190,6,10,6,8,7,12,2,WIN,Vagabundos FC
+Fancy United,5,GW1,1,22,119,232,33,147,193,4,7,14,7,5,14,1,WIN,Dunnyland Sunnyside
+Fancy United,5,GW2,2,29,109,210,45,109,194,6,6,8,8,1,14,1,LOSS,Thornton AFC
+Fancy United,5,GW3,3,45,123,197,67,122,176,3,9,8,9,8,9,1,LOSS,South Preston Saints
+Fancy United,5,GW4,4,35,156,208,65,131,203,3,12,9,8,6,5,1,LOSS,Black Norwood
+Fancy United,5,GW5,5,29,190,192,57,128,226,4,5,9,5,4,10,1,LOSS,West Woodwasp
+Fancy United,5,GW6,6,11,102,131,44,77,123,2,4,16,11,1,6,2,LOSS,Vanatallin FC
+Fancy United,5,GW7,7,50,152,153,59,97,199,2,10,12,12,1,6,1,WIN,Bergerund United
+Fancy United,5,GW8,8,22,99,230,76,55,220,6,2,14,12,5,5,1,LOSS,Niangolang DC
+Fancy United,5,GW9,9,38,102,221,66,69,226,6,7,13,7,2,9,2,LOSS,Bellevue Sharks
+Fancy United,5,GW10,10,36,109,278,78,123,222,3,11,13,12,1,11,1,LOSS,Garrowland United
+Fancy United,5,GW11,11,45,133,232,55,128,227,8,7,9,10,4,2,2,LOSS,Vagabundos FC
+Fancy United,5,GW12,12,66,106,219,69,91,231,1,4,8,12,8,10,2,WIN,Coal City
+West Woodwasp,6,GW1,1,95,144,214,77,101,275,11,8,7,3,6,5,4,WIN,South Preston Saints
+West Woodwasp,6,GW2,2,98,177,256,144,100,287,10,10,4,1,8,6,6,DRAW,Black Norwood
+West Woodwasp,6,GW3,3,90,179,275,127,126,291,13,11,7,2,8,6,6,WIN,Bergerund United
+West Woodwasp,6,GW4,4,88,191,271,90,187,273,13,6,3,4,9,7,6,LOSS,Vanatallin FC
+West Woodwasp,6,GW5,5,142,321,232,233,190,272,6,3,2,1,7,10,4,WIN,Fancy United
+West Woodwasp,6,GW6,6,67,153,311,121,159,251,12,10,3,4,9,6,5,WIN,Niangolang DC
+West Woodwasp,6,GW7,7,79,167,321,106,178,283,10,6,1,5,8,11,5,WIN,Bellevue Sharks
+West Woodwasp,6,GW8,8,99,198,279,105,195,276,7,3,4,1,6,6,6,DRAW,Garrowland United
+West Woodwasp,6,GW9,9,78,188,234,145,106,249,9,9,7,3,6,11,4,WIN,Vagabundos FC
+West Woodwasp,6,GW10,10,81,277,293,201,144,306,9,4,3,1,9,7,5,WIN,Coal City
+West Woodwasp,6,GW11,11,45,145,241,99,149,183,10,3,2,5,9,9,6,WIN,Hollytown FC
+West Woodwasp,6,GW12,12,96,183,282,155,138,268,12,9,2,2,8,6,5,WIN,Dunnyland Sunnyside
+Bergerund United,7,GW1,1,57,100,145,75,103,124,3,5,16,12,17,4,5,LOSS,Black Norwood
+Bergerund United,7,GW2,2,66,134,199,89,122,188,1,3,10,7,10,4,10,WIN,Vagabundos FC
+Bergerund United,7,GW3,3,13,141,185,37,109,193,4,7,8,13,13,4,4,LOSS,West Woodwasp
+Bergerund United,7,GW4,4,63,138,205,79,143,184,2,5,13,7,10,6,4,DRAW,Coal City
+Bergerund United,7,GW5,5,12,88,113,34,76,103,3,3,15,6,16,4,4,LOSS,Vanatallin FC
+Bergerund United,7,GW6,6,59,177,176,115,112,185,1,5,16,10,18,5,10,WIN,Hollytown FC
+Bergerund United,7,GW7,7,77,123,185,111,134,140,3,7,9,9,17,4,9,LOSS,Fancy United
+Bergerund United,7,GW8,8,63,141,197,121,107,173,3,5,11,9,11,6,9,LOSS,Dunnyland Sunnyside
+Bergerund United,7,GW9,9,35,88,134,61,74,122,2,5,11,9,12,4,4,LOSS,Niangolang DC
+Bergerund United,7,GW10,10,45,105,132,65,98,119,1,3,7,5,10,6,4,LOSS,Thornton AFC
+Bergerund United,7,GW11,11,44,92,161,51,71,175,1,4,12,6,19,7,9,LOSS,Bellevue Sharks
+Bergerund United,7,GW12,12,61,101,190,98,99,155,3,6,13,8,18,7,11,DRAW,South Preston Saints
+Thornton AFC,8,GW1,1,45,88,166,59,79,161,2,3,7,8,13,7,7,LOSS,Vanatallin FC
+Thornton AFC,8,GW2,2,101,155,188,128,158,158,1,3,11,5,8,6,3,WIN,Fancy United
+Thornton AFC,8,GW3,3,67,99,175,91,89,161,2,6,12,5,9,4,4,LOSS,Niangolang DC
+Thornton AFC,8,GW4,4,77,134,178,92,104,193,1,7,15,6,10,7,11,LOSS,Bellevue Sharks
+Thornton AFC,8,GW5,5,89,135,200,104,133,187,1,5,10,6,14,6,9,DRAW,Garrowland United
+Thornton AFC,8,GW6,6,151,156,231,177,135,226,1,7,10,8,9,5,14,WIN,Vagabundos FC
+Thornton AFC,8,GW7,7,121,155,151,116,121,190,2,5,16,6,7,6,9,DRAW,Coal City
+Thornton AFC,8,GW8,8,133,166,189,135,90,263,1,3,10,6,10,7,6,WIN,Hollytown FC
+Thornton AFC,8,GW9,9,143,146,166,144,110,201,1,6,14,6,10,6,5,WIN,Dunnyland Sunnyside
+Thornton AFC,8,GW10,10,134,180,180,146,101,247,3,5,11,7,17,7,6,WIN,Bergerund United
+Thornton AFC,8,GW11,11,101,180,203,154,109,221,2,6,11,4,12,7,6,WIN,South Preston Saints
+Thornton AFC,8,GW12,12,105,167,170,131,159,152,1,7,9,6,10,5,8,WIN,Black Norwood
+Black Norwood,9,GW1,1,88,155,164,95,105,207,6,5,9,7,10,10,9,WIN,Bergerund United
+Black Norwood,9,GW2,2,85,120,178,67,106,210,2,4,10,4,16,11,14,DRAW,West Woodwasp
+Black Norwood,9,GW3,3,33,98,144,56,77,142,2,4,17,7,14,12,11,LOSS,Vanatallin FC
+Black Norwood,9,GW4,4,117,158,188,123,159,181,6,3,13,5,15,15,10,WIN,Fancy United
+Black Norwood,9,GW5,5,55,127,158,79,134,127,5,5,3,6,7,12,5,DRAW,Niangolang DC
+Black Norwood,9,GW6,6,58,145,108,71,121,119,9,5,11,4,11,14,3,DRAW,Bellevue Sharks
+Black Norwood,9,GW7,7,65,135,103,69,119,115,2,5,6,5,13,13,4,LOSS,Garrowland United
+Black Norwood,9,GW8,8,104,166,155,89,150,186,1,5,7,7,17,17,12,WIN,Vagabundos FC
+Black Norwood,9,GW9,9,106,164,158,87,167,174,2,3,17,6,10,9,9,WIN,Coal City
+Black Norwood,9,GW10,10,156,151,190,96,165,236,6,7,10,5,13,15,15,WIN,Hollytown FC
+Black Norwood,9,GW11,11,78,134,190,65,124,213,9,5,5,7,16,13,7,LOSS,Dunnyland Sunnyside
+Black Norwood,9,GW12,12,74,121,139,66,88,180,6,4,6,7,11,12,8,LOSS,Thornton AFC
+Vagabundos AFC,10,GW1,1,35,100,131,44,90,132,3,10,2,4,17,8,9,LOSS,Garrowland United
+Vagabundos AFC,10,GW2,2,33,107,149,47,86,156,5,10,5,4,9,13,4,LOSS,Bergerund United
+Vagabundos AFC,10,GW3,3,48,137,166,69,93,189,4,8,3,5,13,9,13,DRAW,Coal City
+Vagabundos AFC,10,GW4,4,77,154,164,98,144,153,4,11,2,13,10,16,6,WIN,Hollytown FC
+Vagabundos AFC,10,GW5,5,45,102,167,88,102,124,2,11,4,8,11,9,11,LOSS,Dunnyland Sunnyside
+Vagabundos AFC,10,GW6,6,41,131,141,87,95,131,1,8,3,11,15,15,9,LOSS,Thornton AFC
+Vagabundos AFC,10,GW7,7,65,115,154,100,101,133,2,12,2,13,17,15,10,LOSS,South Preston Saints
+Vagabundos AFC,10,GW8,8,66,109,155,111,90,129,3,12,2,10,7,8,11,LOSS,Black Norwood
+Vagabundos AFC,10,GW9,9,22,99,105,61,55,110,7,8,4,5,16,15,6,LOSS,West Woodwasp
+Vagabundos AFC,10,GW10,10,27,87,95,42,67,100,2,8,4,5,16,10,8,LOSS,Vanatallin FC
+Vagabundos AFC,10,GW11,11,78,166,164,104,138,166,3,9,4,13,16,11,8,WIN,Fancy United
+Vagabundos AFC,10,GW12,12,18,68,105,44,72,75,9,13,4,4,10,12,8,LOSS,Niangolang DC
+Dunnyland Sunnyside,11,GW1,1,55,122,166,56,111,176,4,3,9,8,8,17,6,LOSS,Fancy United
+Dunnyland Sunnyside,11,GW2,2,13,77,141,44,79,108,1,11,6,14,7,14,4,LOSS,Niangolang DC
+Dunnyland Sunnyside,11,GW3,3,19,141,121,66,76,139,3,8,7,11,15,10,9,LOSS,Bellevue Sharks
+Dunnyland Sunnyside,11,GW4,4,44,101,104,64,76,109,3,5,5,14,7,12,9,LOSS,Garrowland United
+Dunnyland Sunnyside,11,GW5,5,76,103,122,88,87,126,6,8,9,10,14,12,12,WIN,Vagabundos FC
+Dunnyland Sunnyside,11,GW6,6,66,77,133,90,67,119,4,7,4,13,11,11,15,LOSS,Coal City
+Dunnyland Sunnyside,11,GW7,7,104,156,130,115,66,209,1,7,2,5,11,10,7,DRAW,Hollytown FC
+Dunnyland Sunnyside,11,GW8,8,95,144,177,162,88,166,6,3,2,14,13,14,5,WIN,Bergerund United
+Dunnyland Sunnyside,11,GW9,9,53,122,122,66,67,164,1,7,5,5,10,10,8,LOSS,Thornton AFC
+Dunnyland Sunnyside,11,GW10,10,34,123,115,45,76,151,3,2,9,11,14,9,15,LOSS,South Preston Saints
+Dunnyland Sunnyside,11,GW11,11,54,115,190,103,98,158,6,5,3,8,7,15,15,WIN,Black Norwood
+Dunnyland Sunnyside,11,GW12,12,31,65,122,47,33,138,4,7,2,9,9,14,8,LOSS,West Woodwasp
+Hollytown FC,12,GW1,1,14,55,77,41,55,50,4,6,9,8,11,10,5,LOSS,Niangolang DC
+Hollytown FC,12,GW2,2,16,65,78,33,57,69,3,6,21,7,13,16,3,LOSS,Bellevue Sharks
+Hollytown FC,12,GW3,3,24,57,121,39,65,98,2,3,10,12,14,13,6,LOSS,Garrowland United
+Hollytown FC,12,GW4,4,66,105,105,69,88,119,2,4,12,11,12,11,5,LOSS,Vagabundos FC
+Hollytown FC,12,GW5,5,68,116,109,78,82,133,2,7,9,6,11,9,4,LOSS,Coal City
+Hollytown FC,12,GW6,6,54,90,144,74,80,134,2,2,3,14,13,15,6,LOSS,Bergerund United
+Hollytown FC,12,GW7,7,43,89,147,68,99,112,4,4,15,7,17,17,4,DRAW,Dunnyland Sunnyside
+Hollytown FC,12,GW8,8,41,82,134,88,37,132,4,7,8,10,17,15,6,LOSS,Thornton AFC
+Hollytown FC,12,GW9,9,55,105,147,89,122,96,3,3,7,13,17,10,3,DRAW,South Preston Saints
+Hollytown FC,12,GW10,10,31,111,141,100,66,117,2,6,18,14,16,13,4,LOSS,Black Norwood
+Hollytown FC,12,GW11,11,27,84,89,77,44,79,2,7,3,11,15,14,3,LOSS,West Woodwasp
+Hollytown FC,12,GW12,12,23,88,120,67,32,132,3,7,18,12,13,10,3,LOSS,Vanatallin FC
+South Preston Saints,13,GW1,1,26,70,96,44,41,107,3,17,7,11,11,12,5,LOSS,West Woodwasp
+South Preston Saints,13,GW2,2,33,78,124,55,65,115,4,6,7,8,10,16,3,LOSS,Vanatallin FC
+South Preston Saints,13,GW3,3,59,178,201,99,137,202,4,13,19,7,8,17,5,WIN,Fancy United
+South Preston Saints,13,GW4,4,43,67,105,66,61,88,3,5,17,10,9,17,6,LOSS,Niangolang DC
+South Preston Saints,13,GW5,5,56,101,107,41,111,112,3,11,6,10,9,10,6,DRAW,Bellevue Sharks
+South Preston Saints,13,GW6,6,65,64,154,51,66,166,2,13,16,7,12,16,6,LOSS,Garrowland United
+South Preston Saints,13,GW7,7,78,155,198,143,104,184,2,14,5,7,9,14,5,WIN,Vagabundos FC
+South Preston Saints,13,GW8,8,87,145,233,111,141,213,4,10,13,6,12,11,4,DRAW,Coal City
+South Preston Saints,13,GW9,9,101,122,243,100,99,267,3,7,8,4,7,13,3,DRAW,Hollytown FC
+South Preston Saints,13,GW10,10,77,175,252,95,135,274,4,5,8,13,12,13,4,WIN,Dunnyland Sunnyside
+South Preston Saints,13,GW11,11,61,111,123,69,70,156,1,16,15,12,11,13,5,LOSS,Thornton AFC
+South Preston Saints,13,GW12,12,61,151,155,97,55,215,2,9,11,8,11,11,4,DRAW,Bergerund United
+Coal City,14,GW1,1,54,101,122,65,45,167,6,8,3,14,10,17,6,LOSS,Bellevue Sharks
+Coal City,14,GW2,2,52,91,155,77,66,155,5,6,4,5,7,11,5,LOSS,Garrowland United
+Coal City,14,GW3,3,85,151,165,78,65,258,7,4,4,5,12,17,4,DRAW,Vagabundos FC
+Coal City,14,GW4,4,58,99,167,66,82,176,8,5,3,10,11,13,3,DRAW,Bergerund United
+Coal City,14,GW5,5,116,144,165,112,109,204,5,8,3,6,7,16,6,WIN,Hollytown FC
+Coal City,14,GW6,6,115,121,147,90,101,192,5,9,3,6,10,17,6,WIN,Dunnyland Sunnyside
+Coal City,14,GW7,7,77,122,105,94,77,133,5,4,5,8,9,13,6,DRAW,Thornton AFC
+Coal City,14,GW8,8,91,88,122,117,55,129,4,6,3,8,8,10,4,DRAW,South Preston Saints
+Coal City,14,GW9,9,45,78,127,44,39,167,9,7,5,10,7,13,5,LOSS,Black Norwood
+Coal City,14,GW10,10,33,89,116,49,71,118,7,7,2,12,10,10,6,LOSS,West Woodwasp
+Coal City,14,GW11,11,34,71,109,56,56,102,5,9,1,10,8,12,6,LOSS,Vanatallin FC
+Coal City,14,GW12,12,66,113,138,68,57,192,5,9,1,14,10,14,5,LOSS,Fancy United
