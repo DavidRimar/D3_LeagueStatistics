@@ -100,7 +100,7 @@ const renderStackedBarchart = (dataSet, customObj, handlers) => {
     const svgContainer = container
       .append("svg")
       .attr("preserveAspectRatio", "xMinYMin meet")
-      .attr("viewBox", `0 0 ${svgWidth} ${svgHeight}`)
+      .attr("viewBox", `-20 -30 ${svgWidth + 80} ${svgHeight + 80}`)
       .classed("svg-content", true);
 
     svgContainer

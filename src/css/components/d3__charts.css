@@ -14,7 +14,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding-left: 8%;
+  padding-left: 10%;
 }
 
 .rect__highlight {
@@ -28,13 +28,13 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .svg-content {
-    padding-left: 10%;
+    padding-left: 12%;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .svg-content {
-    padding-left: 13%;
+    padding-left: 14%;
   }
 }
