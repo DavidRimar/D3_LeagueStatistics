@@ -1,0 +1,42 @@
+{
+  "search.exclude": {
+    "**/node_modules": true
+  },
+
+  "files.exclude": {
+    "**/.git": false,
+    "package-lock.json": true,
+
+    "d3/": false,
+    "node_modules/": false,
+
+    "tsconfig.json": false,
+
+    ".gitattributes": false,
+    ".editorconfig": false,
+    ".*ignore": false,
+    ".*rc.json": false
+  },
+
+  // Editor settings
+  "editor.rulers": [80, 90],
+  "editor.tabSize": 2,
+
+  // Force line endings to LF
+  "files.eol": "\n",
+
+  // Disable VSCode Telemetry
+  "telemetry.enableTelemetry": false,
+
+  // Turn off unnecessary editor warnings
+  "typescript.validate.enable": true,
+  "css.validate": false,
+
+  // Prettier settings
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Enable linting on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  }
+}
