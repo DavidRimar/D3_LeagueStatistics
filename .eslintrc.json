@@ -1,0 +1,50 @@
+{
+  "root": true,
+  "ignorePatterns": ["d3/**/*.js", "node_modules/"],
+  "env": {
+    "browser": true
+  },
+  "extends": ["airbnb-base", "prettier"],
+  "globals": {
+    "d3": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": false,
+      "impliedStrict": true
+    },
+    "ecmaVersion": 2019,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier", "html"],
+  "rules": {
+    "no-console": "off",
+    "no-plusplus": "off",
+    "camelcase": "off",
+    "object-shorthand": "off",
+    "spaced-comment": "off",
+    "func-names": "off",
+    "no-undef": "off",
+    "prefer-destructuring": "off",
+    "prefer-template": "off",
+    "import/prefer-default-export": ["off", "always"],
+
+    "import/extensions": [2, "always"],
+
+    "prettier/prettier": ["error", { "endOfLine": "auto" }]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.html"],
+      "rules": {
+        "prettier/prettier": "off"
+      }
+    },
+    {
+      "files": ["src/js/presenter/**/*.js"],
+      "rules": {
+        "import/no-cycle": "off"
+      }
+    }
+  ]
+}

@@ -5,7 +5,7 @@
 const createDataModel = rawGameweekStatsData => {
   const leagueStatistics = rawGameweekStatsData.map(row => row);
   return {
-    leagueStatistics: leagueStatistics
+    leagueStatistics: leagueStatistics,
   };
 };
 

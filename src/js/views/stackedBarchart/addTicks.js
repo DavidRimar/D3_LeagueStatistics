@@ -18,13 +18,13 @@ const addTicks = (
   axisLabelText,
   positionX,
   positionY,
-  rotateAngle
+  rotateAngle,
 ) => {
   const doubleUnderscore = "__";
-  var axisLabel = "";
+  let axisLabel = "";
   // LOGIC TO DIFFERENTIATE MORE GRANULAR CHART IDs (which include underscores)
   // if underscore present
-  if (axisLabelText.includes(doubleUnderscore) == true) {
+  if (axisLabelText.includes(doubleUnderscore) === true) {
     // use the first part for the ID as a label
     const underScoreIndex = axisLabelText.indexOf(doubleUnderscore);
     axisLabel =
@@ -45,7 +45,7 @@ const addTicks = (
     .append("text")
     .attr(
       "transform",
-      `translate(${positionX},${positionY}) rotate(${rotateAngle})`
+      `translate(${positionX},${positionY}) rotate(${rotateAngle})`,
     )
     .style("text-anchor", "middle")
     .text(`${axisLabel}`)

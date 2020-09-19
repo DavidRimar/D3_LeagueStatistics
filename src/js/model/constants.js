@@ -12,7 +12,7 @@ export const TEAMS = {
   T11: "South Preston Saints",
   T12: "Vagabundos AFC",
   T13: "Hollytown FC",
-  T14: "Thornton AFC"
+  T14: "Thornton AFC",
 };
 
 // AERIAL PASSES
@@ -20,7 +20,7 @@ export const AERIAL_PASSES_LABELS = ["defensive", "middle", "offensive"];
 export const AERIAL_PASSES_KEYS = [
   "PASSES_DEFENSIVE",
   "PASSES_MIDDLE",
-  "PASSES_OFFENSIVE"
+  "PASSES_OFFENSIVE",
 ];
 
 // DIRECTION PASSES
@@ -28,14 +28,14 @@ export const DIRECTION_PASSES_LABELS = ["backward", "lateral", "forward"];
 export const DIRECTION_PASSES_KEYS = [
   "PASSES_BACKWARD",
   "PASSES_LATERAL",
-  "PASSES_FORWARD"
+  "PASSES_FORWARD",
 ];
 
 // SHOTS
 export const SHOTS_LABELS = [
   "shots__six",
   "shots__eighteen",
-  "shots__twentyfour"
+  "shots__twentyfour",
 ];
 export const SHOTS_KEYS = ["SHOTS_6_YARD", "SHOTS_18_YARD", "SHOTS_24_YARD"];
 
@@ -44,13 +44,13 @@ export const BLOCKS_LABELS = [
   "blocks__keeper",
   "blocks__six",
   "blocks__eighteen",
-  "blocks__twentyfour"
+  "blocks__twentyfour",
 ];
 export const BLOCKS_KEYS = [
   "BLOCKS_KEEPER",
   "BLOCKS_6_YARD",
   "BLOCKS_18_YARD",
-  "BLOCKS_24_YARD"
+  "BLOCKS_24_YARD",
 ];
 
 // COLOR SCALES
@@ -64,14 +64,14 @@ export const STACKEDCHART_IDs = {
   AERIAL: "passes__aerial",
   DIRECTION: "passes__direction",
   SHOTS: "shots",
-  BLOCKS: "blocks"
+  BLOCKS: "blocks",
 };
 
 export const TEAM_DROPDOWN_IDs = {
   AERIAL: "dropdown__teams__aerial",
   DIRECTION: "dropdown__teams__direction",
   SHOTS: "dropdown__teams__shots",
-  BLOCKS: "dropdown__teams__blocks"
+  BLOCKS: "dropdown__teams__blocks",
 };
 
 // CHART SPECIFIC VARIABLES (export as object)
@@ -79,26 +79,26 @@ export const CHART_SPEC_AERIAL = {
   containerDomId: STACKEDCHART_IDs.AERIAL,
   stackKeys: AERIAL_PASSES_KEYS,
   customLabels: AERIAL_PASSES_LABELS,
-  customColors: COLOR_SCALES_GOLD
+  customColors: COLOR_SCALES_GOLD,
 };
 
 export const CHART_SPEC_DIRECTION = {
   containerDomId: STACKEDCHART_IDs.DIRECTION,
   stackKeys: DIRECTION_PASSES_KEYS,
   customLabels: DIRECTION_PASSES_LABELS,
-  customColors: COLOR_SCALES_ORCHID
+  customColors: COLOR_SCALES_ORCHID,
 };
 
 export const CHART_SPEC_SHOTS = {
   containerDomId: STACKEDCHART_IDs.SHOTS,
   stackKeys: SHOTS_KEYS,
   customLabels: SHOTS_LABELS,
-  customColors: COLOR_SCALES_GREEN
+  customColors: COLOR_SCALES_GREEN,
 };
 
 export const CHART_SPEC_BLOCKS = {
   containerDomId: STACKEDCHART_IDs.BLOCKS,
   stackKeys: BLOCKS_KEYS,
   customLabels: BLOCKS_LABELS,
-  customColors: COLOR_SCALES_RED
+  customColors: COLOR_SCALES_RED,
 };

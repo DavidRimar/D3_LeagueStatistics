@@ -6,7 +6,7 @@
  */
 const addTooltip = (svgContainer, containerDomId) => {
   // ADD <g> TO PARENT CONTAINER
-  var tooltip = svgContainer
+  const tooltip = svgContainer
     .append("g")
     .attr("class", `tooltip__group__${containerDomId}`)
     .style("display", "none");

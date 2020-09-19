@@ -40,11 +40,11 @@ const handleMouseOut = (d, i, nodes, containerDomId) => {
 const handleMouseMove = (d, i, nodes, containerDomId) => {
   // TOOLTIP: translate the tooltip <g> following the mouse position
   const tooltipParent = d3.select(`g.tooltip__group__${containerDomId}`);
-  var xPosition = d3.mouse(nodes[i])[0] + 40;
-  var yPosition = d3.mouse(nodes[i])[1] + 10;
+  const xPosition = d3.mouse(nodes[i])[0] + 40;
+  const yPosition = d3.mouse(nodes[i])[1] + 10;
   tooltipParent.attr(
     "transform",
-    "translate(" + xPosition + "," + yPosition + ")"
+    "translate(" + xPosition + "," + yPosition + ")",
   );
   tooltipParent.select("text").text(d[1] - d[0]);
 };
@@ -53,5 +53,5 @@ const handleMouseMove = (d, i, nodes, containerDomId) => {
 export const chartHandlers = {
   handleMouseOver: handleMouseOver,
   handleMouseOut: handleMouseOut,
-  handleMouseMove: handleMouseMove
+  handleMouseMove: handleMouseMove,
 };

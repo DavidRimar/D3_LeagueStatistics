@@ -10,8 +10,7 @@
 const renderTeamDropdown = ({
   containerDOMElementID,
   dropdownValues,
-  data,
-  handlers
+  handlers,
 }) => {
   const dropdownID = `${containerDOMElementID}__dropdown`;
 

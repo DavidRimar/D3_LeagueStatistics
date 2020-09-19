@@ -43,8 +43,8 @@ export const initViews = leagueStatistics => {
       /** @param {leagueStatistics[]} leagueStatistic */
       handleChange: value => {
         handleTeamChange(value, leagueStatistics, constants.CHART_SPEC_AERIAL);
-      }
-    }
+      },
+    },
   });
 
   // Dropdown: DIRECTION
@@ -59,10 +59,10 @@ export const initViews = leagueStatistics => {
         handleTeamChange(
           value,
           leagueStatistics,
-          constants.CHART_SPEC_DIRECTION
+          constants.CHART_SPEC_DIRECTION,
         );
-      }
-    }
+      },
+    },
   });
 
   // Dropdown: SHOTS
@@ -75,8 +75,8 @@ export const initViews = leagueStatistics => {
       /** @param {leagueStatistics[]} leagueStatistic */
       handleChange: value => {
         handleTeamChange(value, leagueStatistics, constants.CHART_SPEC_SHOTS);
-      }
-    }
+      },
+    },
   });
 
   // Dropdown: BLOCKS
@@ -89,8 +89,8 @@ export const initViews = leagueStatistics => {
       /** @param {leagueStatistics[]} leagueStatistic */
       handleChange: value => {
         handleTeamChange(value, leagueStatistics, constants.CHART_SPEC_BLOCKS);
-      }
-    }
+      },
+    },
   });
 
   //// RENDER CHART(s) (default) ////
@@ -102,23 +102,23 @@ export const initViews = leagueStatistics => {
   renderStackedBarchart(
     filteredDataSet,
     constants.CHART_SPEC_AERIAL,
-    chartHandlers
+    chartHandlers,
   );
   renderStackedBarchart(
     filteredDataSet,
     constants.CHART_SPEC_DIRECTION,
-    chartHandlers
+    chartHandlers,
   );
 
   renderStackedBarchart(
     filteredDataSet,
     constants.CHART_SPEC_SHOTS,
-    chartHandlers
+    chartHandlers,
   );
   renderStackedBarchart(
     filteredDataSet,
     constants.CHART_SPEC_BLOCKS,
-    chartHandlers
+    chartHandlers,
   );
 };
 
@@ -140,20 +140,20 @@ export const setAnimation = (() => {
         // Animate smooth scroll
         $("html, body").animate(
           {
-            scrollTop: $(hash).offset().top - 55
+            scrollTop: $(hash).offset().top - 55,
           },
           950,
           function() {
             // Add hash to URL after scroll
             window.location.hash = hash - 55;
-          }
+          },
         );
       }
     });
   };
 
   return {
-    setScrollspy: clickNavItem
+    setScrollspy: clickNavItem,
   };
 })();
 

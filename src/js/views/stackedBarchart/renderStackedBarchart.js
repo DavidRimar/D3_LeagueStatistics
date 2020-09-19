@@ -46,7 +46,7 @@ const renderStackedBarchart = (dataSet, customObj, handlers) => {
     top: 35,
     right: 35,
     bottom: 35,
-    left: 35
+    left: 35,
   };
   const width = 550 - margin.left - margin.right;
   const height = 550 - margin.top - margin.bottom;
@@ -84,7 +84,7 @@ const renderStackedBarchart = (dataSet, customObj, handlers) => {
   xScale.domain(
     dataSet.map(d => {
       return d.GAMEWEEK_ID;
-    })
+    }),
   );
 
   // DEFINE AXES
@@ -119,7 +119,7 @@ const renderStackedBarchart = (dataSet, customObj, handlers) => {
       "GAMEWEEK",
       width / 2,
       40,
-      0
+      0,
     );
 
     addTicks(
@@ -131,7 +131,7 @@ const renderStackedBarchart = (dataSet, customObj, handlers) => {
       `${customObj.containerDomId} (per game)`,
       -40,
       svgHeight / 2.5,
-      -90
+      -90,
     );
 
     // ADD COLOR KEYS & LABELS
