@@ -6,7 +6,7 @@ const capitalize = s => {
 /**
  * ADD COLOR KEYS FUNCTION
  *
- * @param {array[]} labels
+ * @param {string[]} labels
  */
 const addColorKeys = (labels, colorScales) => {
   // ADD COLOR TO bc__color divs

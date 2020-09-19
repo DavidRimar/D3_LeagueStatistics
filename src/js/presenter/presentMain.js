@@ -6,13 +6,13 @@ import { chartHandlers } from "./presentStackedBarchart.js"; // Chart-specific H
 import createDataModel from "../model/createDataModel.js";
 
 /**
- * HANDLE TEAM CHANGE (general)
+ * HANDLE TEAM CHANGE (for dropdown)
  * 1. gameweeks data is filtered based on the stored value
  * 2. Call renderStackedBarChart function with arguments
  *
- * // @param {Model} leagueStatistics // this is our data
- * // @param {string} value
- * // @returns {void}
+ * @param {LeagueStatistics[]} leagueStatistics
+ * @param {CustomObj} chartCustomVars
+ * @param {string} value
  */
 export const handleTeamChange = (value, leagueStatistics, chartCustomVars) => {
   // 1.
@@ -22,22 +22,19 @@ export const handleTeamChange = (value, leagueStatistics, chartCustomVars) => {
 };
 
 /**
- * INIT CHARTs
- * 1. Set default value for dropdown
- * 2. Dataset is filtered based on the default value
- * 3. Call renderStackedBarChart functions with arguments
- *
- * // @param {Model} leagueStatistics // this is our data
- * // @param {string} value
- * // @returns {void}
+ * INIT VIEWSs
+ * 1. Dropdowns are rendered
+ * 2. Set default value for dropdown
+ * 3. Dataset is filtered based on the default value
+ * 4. StackedBarCharts are rendered
+ * @param {LeagueStatistics[]} leagueStatistics
  */
 export const initViews = leagueStatistics => {
-  //// RENDER DROPDOWN(s) ////
+  // 1.
   // Dropdown: AERIAL
   renderTeamDropdown({
     containerDOMElementID: constants.TEAM_DROPDOWN_IDs.AERIAL,
     dropdownValues: Object.entries(constants.TEAMS),
-    data: leagueStatistics,
     handlers: {
       /** @param {string} value */
       /** @param {leagueStatistics[]} leagueStatistic */
@@ -51,7 +48,6 @@ export const initViews = leagueStatistics => {
   renderTeamDropdown({
     containerDOMElementID: constants.TEAM_DROPDOWN_IDs.DIRECTION,
     dropdownValues: Object.entries(constants.TEAMS),
-    data: leagueStatistics,
     handlers: {
       /** @param {string} value */
       /** @param {leagueStatistics[]} leagueStatistic */
@@ -69,7 +65,6 @@ export const initViews = leagueStatistics => {
   renderTeamDropdown({
     containerDOMElementID: constants.TEAM_DROPDOWN_IDs.SHOTS,
     dropdownValues: Object.entries(constants.TEAMS),
-    data: leagueStatistics,
     handlers: {
       /** @param {string} value */
       /** @param {leagueStatistics[]} leagueStatistic */
@@ -83,7 +78,6 @@ export const initViews = leagueStatistics => {
   renderTeamDropdown({
     containerDOMElementID: constants.TEAM_DROPDOWN_IDs.BLOCKS,
     dropdownValues: Object.entries(constants.TEAMS),
-    data: leagueStatistics,
     handlers: {
       /** @param {string} value */
       /** @param {leagueStatistics[]} leagueStatistic */
@@ -93,12 +87,11 @@ export const initViews = leagueStatistics => {
     },
   });
 
-  //// RENDER CHART(s) (default) ////
-  // 1.
-  const defaultValue = "Garrowland United";
   // 2.
-  const filteredDataSet = filterByTeam(defaultValue, leagueStatistics);
+  const defaultValue = "Garrowland United";
   // 3.
+  const filteredDataSet = filterByTeam(defaultValue, leagueStatistics);
+  // 4.
   renderStackedBarchart(
     filteredDataSet,
     constants.CHART_SPEC_AERIAL,
@@ -130,11 +123,13 @@ export const setAnimation = (() => {
     navLinks.on("click", function(e) {
       console.log("This is happening");
       // Check for a hash value
+      // @ts-ignore
       if (this.hash !== "") {
         // Prevent default behavior
         e.preventDefault();
 
         // Store hash
+        // @ts-ignore
         const hash = this.hash;
 
         // Animate smooth scroll
@@ -144,7 +139,8 @@ export const setAnimation = (() => {
           },
           950,
           function() {
-            // Add hash to URL after scroll
+            // Set window location according to hash + navbar height
+            // @ts-ignore
             window.location.hash = hash - 55;
           },
         );

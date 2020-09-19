@@ -1,11 +1,9 @@
 /**
  *
- * //@typedef Props
- * //@property {string} containerDOMElementID
- * //@property {[string|number, string][]} dropdownValues Data populating the dropdown
- *                                            as an object of key-value pairs
- * //@property {string} labelText Text that besides the dropdown
- * //@property {ChartHandlers} [handlers]
+ * @typedef Props
+ * @property {string} containerDOMElementID
+ * @property {[string|number, string][]} dropdownValues Data as an object of key-value pairs
+ * @property {ChartHandlers} handlers
  */
 const renderTeamDropdown = ({
   containerDOMElementID,

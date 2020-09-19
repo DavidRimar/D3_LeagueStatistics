@@ -34,7 +34,7 @@ const getMaxValue = layeredData => {
 
 /**
  * @param {CustomObj} customObj Chart specific variables as an object literal
- * @param {any[]} dataset
+ * @param {any[]} dataSet
  * @param {ChartHandlers} handlers
  *
  *
@@ -88,7 +88,9 @@ const renderStackedBarchart = (dataSet, customObj, handlers) => {
   );
 
   // DEFINE AXES
+  // @ts-ignore
   const xAxis = d3.axisBottom().scale(xScale);
+  // @ts-ignore
   const yAxis = d3.axisLeft().scale(yScale);
 
   // CONTAINER DOM ELEMENT

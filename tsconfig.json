@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "skipLibCheck": true,
+    "alwaysStrict": true,
+    "noEmit": true,
+    "pretty": true,
+    "noFallthroughCasesInSwitch": true,
+    "lib": ["DOM", "DOM.Iterable", "ES2019"],
+    "target": "ES2019",
+    "allowUmdGlobalAccess": true,
+    "downlevelIteration": true
+  },
+  "include": ["src/**/*.js", "src/**/*.ts", "./server.js"]
+}

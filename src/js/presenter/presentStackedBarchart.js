@@ -35,7 +35,7 @@ const handleMouseOut = (d, i, nodes, containerDomId) => {
  * @param {any} d
  * @param {any} i
  * @param {any} nodes
- * @param {any} containerDomId // identify the tooltip uniquely
+ * @param {string} containerDomId // identify the tooltip uniquely
  */
 const handleMouseMove = (d, i, nodes, containerDomId) => {
   // TOOLTIP: translate the tooltip <g> following the mouse position

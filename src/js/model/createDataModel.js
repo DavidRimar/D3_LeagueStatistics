@@ -1,5 +1,5 @@
 /**
- * @param {RawGameweekStats} rawGameweekStatsData
+ * @param {RawGameWeekStats[]} rawGameweekStatsData
  * @returns {Model}
  */
 const createDataModel = rawGameweekStatsData => {

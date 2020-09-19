@@ -1,8 +1,5 @@
 /**
- *
- * @param {leagueStatistics} leagueStatistics
- * @param {string} value
- * @returns {array[]}
+ * @type {FilterByTeam}
  */
 
 const filterByTeam = (value, leagueStatistics) => {
