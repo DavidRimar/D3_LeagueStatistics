@@ -26,7 +26,8 @@
     <!-- Site content -->
 
     <header>
-      <nav id="navbar"
+      <nav
+        id="navbar"
         class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
         role="navigation"
       >
@@ -55,31 +56,34 @@
             </li>
           </ul>
         </div>
-
+      </nav>
     </header>
 
     <main class="main__grid">
       <section id="home__section" class="section__header">
-          <h2>
-              Project Description
-            </h2>
-            <p class="mx-4">This project uses D3 version 4 to render fictional league statistics in the form of stacked barcharts.
-              The chart views are highly customizable and build with the ease of re-usability in mind.
-            <br>
-            The application is also responsive and easy to use on all device, thanks to the grid system.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quam saepe ea, beatae maxime blanditiis ullam necessitatibus eligendi repellendus quae unde repellat repudiandae doloremque fugit vitae! Inventore sit sed facilis!
-            </p>
+        <h2>
+          Project Description
+        </h2>
+        <p class="mx-4">
+          This project uses D3 version 4 to render fictional league statistics
+          in the form of stacked barcharts. The chart views are highly
+          customizable and build with the ease of re-usability in mind.
+          <br />
+          The application is also responsive and easy to use on all device,
+          thanks to the grid system. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Excepturi quam saepe ea, beatae maxime blanditiis
+          ullam necessitatibus eligendi repellendus quae unde repellat
+          repudiandae doloremque fugit vitae! Inventore sit sed facilis!
+        </p>
       </section>
 
-
       <section id="passes__section" class="section__header">
-          <h2>
-              Passing Stats
-            </h2>
+        <h2>
+          Passing Stats
+        </h2>
       </section>
 
       <section id="d3__views__passes" class="container-fluid">
-
         <!-- PASSES AERIAL -->
         <div class="row">
           <div id="view__passes__aerial" class="col-sm-6">
@@ -98,7 +102,10 @@
                 <div id="bc__label__defensive" class="bc__label label"></div>
               </div>
             </div>
-           <div id="stackedBarChart__passes__aerial" class="row svg-container"></div>
+            <div
+              id="stackedBarChart__passes__aerial"
+              class="row svg-container"
+            ></div>
           </div>
           <!-- PASSES DIRECTION -->
           <div id="view__passes__direction" class="col-sm-6">
@@ -129,22 +136,27 @@
       </section>
 
       <section id="shots__section" class="section__header">
-          <h2>
-              Shots & Blocks
-            </h2>
+        <h2>
+          Shots & Blocks
+        </h2>
 
-          <p class="mx-4">This project uses D3 version 4 to render fictional league statistics in the form of stacked barcharts.
-            The chart views are highly customizable and build with the ease of re-usability in mind.
-          <br>
-          The application is also responsive and easy to use on all device, thanks to the grid system.
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi, accusamus aliquam delectus quis nisi, cupiditate quam illum ipsa. Rem, cum!
+        <p class="mx-4">
+          This project uses D3 version 4 to render fictional league statistics
+          in the form of stacked barcharts. The chart views are highly
+          customizable and build with the ease of re-usability in mind.
+          <br />
+          The application is also responsive and easy to use on all device,
+          thanks to the grid system.
+          <br />
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam
+          eos unde autem deleniti nemo aperiam pariatur repudiandae eius quasi,
+          accusamus aliquam delectus quis nisi, cupiditate quam illum ipsa. Rem,
+          cum!
+        </p>
       </section>
 
       <section id="d3__views__shots__blocks" class="container-fluid">
-
         <div class="row">
-
           <!-- SHOTS -->
           <div id="view__shots" class="col-sm-6">
             <div id="dropdown__teams__shots" class="row dropdown__teams"></div>
@@ -155,11 +167,17 @@
               </div>
               <div class="bc__swatch">
                 <div id="bc__color__shots__eighteen" class="bc__color"></div>
-                <div id="bc__label__shots__eighteen" class="bc__label label"></div>
+                <div
+                  id="bc__label__shots__eighteen"
+                  class="bc__label label"
+                ></div>
               </div>
               <div class="bc__swatch">
                 <div id="bc__color__shots__twentyfour" class="bc__color"></div>
-                <div id="bc__label__shots__twentyfour" class="bc__label label"></div>
+                <div
+                  id="bc__label__shots__twentyfour"
+                  class="bc__label label"
+                ></div>
               </div>
             </div>
             <div id="stackedBarChart__shots" class="row svg-container"></div>
@@ -167,37 +185,38 @@
 
           <!-- BLOCKS -->
           <div id="view__blocks" class="col-sm-6">
-            <div
-              id="dropdown__teams__blocks"
-              class="row dropdown__teams"
-            ></div>
+            <div id="dropdown__teams__blocks" class="row dropdown__teams"></div>
             <div class="row bc__colorkeys">
               <div class="bc__swatch">
-                  <div id="bc__color__blocks__keeper" class="bc__color"></div>
-                  <div id="bc__label__blocks__keeper" class="bc__label label"></div>
-                </div>
+                <div id="bc__color__blocks__keeper" class="bc__color"></div>
+                <div
+                  id="bc__label__blocks__keeper"
+                  class="bc__label label"
+                ></div>
+              </div>
               <div class="bc__swatch">
                 <div id="bc__color__blocks__six" class="bc__color"></div>
                 <div id="bc__label__blocks__six" class="bc__label label"></div>
               </div>
               <div class="bc__swatch">
                 <div id="bc__color__blocks__eighteen" class="bc__color"></div>
-                <div id="bc__label__blocks__eighteen" class="bc__label label"></div>
+                <div
+                  id="bc__label__blocks__eighteen"
+                  class="bc__label label"
+                ></div>
               </div>
               <div class="bc__swatch">
                 <div id="bc__color__blocks__twentyfour" class="bc__color"></div>
-                <div id="bc__label__blocks__twentyfour" class="bc__label label"></div>
+                <div
+                  id="bc__label__blocks__twentyfour"
+                  class="bc__label label"
+                ></div>
               </div>
             </div>
-            <div
-              id="stackedBarChart__blocks"
-              class="row svg-container"
-            ></div>
+            <div id="stackedBarChart__blocks" class="row svg-container"></div>
           </div>
         </div>
       </section>
-
-
     </main>
 
     <!-- Below-the-fold scripts -->
@@ -205,7 +224,7 @@
       import { initialiseApp } from "./src/js/presenter/presentMain.js";
 
       const data = {
-        gameweeks: "./data/gameweekStats.csv"
+        gameweeks: "./data/gameweekStats.csv",
       };
 
       // QUEUE, IMPORT DATA AND CALL initialiseApp
@@ -218,8 +237,8 @@
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous">
-      </script>
+      crossorigin="anonymous"
+    ></script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -231,13 +250,5 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <script>
-
-
-        // WINDOW RESIZE LOG
-        const reportWindowSize = () => {console.log("window height", window.innerHeight), console.log("window width", window.innerWidth)};
-        window.addEventListener('resize', reportWindowSize);
-    </script>
-
   </body>
 </html>

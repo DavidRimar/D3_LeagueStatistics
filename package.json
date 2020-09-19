@@ -9,7 +9,7 @@
     "lint:es": "eslint --ignore-path .gitignore . --ext js",
     "format": "run-p format:**",
     "format:es": "eslint --ignore-path .gitignore . --ext js --fix",
-    "format:prettier": "prettier --ignore-path .gitignore --write '**/*.html'"
+    "format:prettier": "prettier --ignore-path .gitignore --write **/*.html"
   },
   "repository": {
     "type": "git",
