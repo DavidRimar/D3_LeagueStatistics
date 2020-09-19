@@ -34,8 +34,6 @@ const addTicks = (
     axisLabel = axisLabelText.toUpperCase();
   }
 
-  console.log("axis label: ", axisLabel);
-
   graph
     .append("g")
     .attr("id", `axis__${id}`)

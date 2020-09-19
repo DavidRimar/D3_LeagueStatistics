@@ -61,14 +61,11 @@ const renderStackedBarchart = (dataSet, customObj, handlers) => {
   const colorKeyLabels = customObj.customLabels;
 
   // STACKED DATA
-  console.log("Filtered data from renderStackedBarchart: ", dataSet);
   const stack = d3.stack().keys(customObj.stackKeys);
   const layeredData = stack(dataSet);
-  console.log("layered data", layeredData);
 
   // GET MAX VALUE
   const maxValue = getMaxValue(layeredData);
-  console.log("max value", maxValue);
 
   // X, Y RANGE
   const yScale = d3.scaleLinear().rangeRound([height, 0]);
