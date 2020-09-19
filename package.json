@@ -1,0 +1,22 @@
+{
+  "name": "d3_leaguestatistics",
+  "version": "1.0.0",
+  "description": "This is a D3 visualisation app.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidRimar/D3_LeagueStatistics.git"
+  },
+  "author": "David Rimar (rimardavid@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidRimar/D3_LeagueStatistics/issues"
+  },
+  "homepage": "https://github.com/DavidRimar/D3_LeagueStatistics#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
