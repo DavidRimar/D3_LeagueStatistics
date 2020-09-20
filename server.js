@@ -11,7 +11,7 @@ const runServer = () => {
   app.use(express.static(cwd));
 
   // Set the default port to connect to.
-  const port = 3000;
+  const port = process.env.PORT || 3000;
 
   // Run the server at the specified port.
   app.listen(port, () => {
