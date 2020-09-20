@@ -14,14 +14,9 @@ body {
   /*padding-top: 12%;*/
 }
 
-#view__passes__aerial {
-  border: solid;
-  border-color: black;
-}
-
-#view__passes__direction {
-  border: solid;
-  border-color: blue;
+.col__view {
+  border: groove;
+  border-radius: 3%;
 }
 
 p {
