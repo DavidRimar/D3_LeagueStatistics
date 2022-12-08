@@ -34,7 +34,7 @@
     "*.{html,md,json}": "prettier --write"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "@types/d3": "^4.13.2",
